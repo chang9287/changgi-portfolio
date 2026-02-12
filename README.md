@@ -57,7 +57,7 @@
 
 |                               메인 페이지                               |
 | :---------------------------------------------------------------------: |
-| <img src="images/Readme Image/mainpage.png" alt="Sample Page" height="250px" /> |
+| <img src="img/Readme/project_fullImg.png.png" alt="Sample Page" height="250px" /> |
 <br />
 
 
