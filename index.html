@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오</title>
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" type="text/css" href="style/xeicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  
+</head>
+<body class="is-loading">
+  <!-- Loading-page -->
+  <div class="loading">
+    <div class="loading-bar">
+      <svg viewBox="0 0 410 60">
+        <defs>
+          <clipPath id="progressClip">
+            <rect id="progressBar" x="15" y="15" width="0" height="30" rx="15" ry="15" />
+          </clipPath>
+        </defs>
+      
+        <!-- 채워지는 부분 -->
+        <rect
+          x="15"
+          y="15"
+          width="380"
+          height="30"
+          rx="15"
+          ry="15"
+          fill="#6C5D53"
+          clip-path="url(#progressClip)"
+        />
+      
+        <!-- 테두리 부분 -->
+        <rect
+          x="15"
+          y="15"
+          width="380"
+          height="30"
+          rx="15"
+          ry="15"
+          fill="none"
+          stroke="#6C5D53"
+          stroke-width="4"
+        />
+        <rect
+          x="5"
+          y="5"
+          width="400"
+          height="50"
+          rx="25"
+          ry="25"
+          fill="none"
+          stroke="#6C5D53"
+          stroke-width="4"
+        />
+      </svg>
+      <div class="loading-percent">0%</div>
+    </div>
+    <div class="loading-text">
+      <p class="loading-text-container">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- QR-Modal -->
+  <div class="qr-modal">
+   <div class="qr-wrap">
+     <img src="./img/Open-kakaoTalk.JPG" alt="카카오 QR코드">
+     <div class="qr-close-btn">
+      <i class="xi-close"></i>
+     </div>
+   </div>
+  </div>
+
+  <!-- Contact-box -->
+  <div class="contact-box">
+    <ul>
+      <li class="contact-toggle">
+        <span class="contact-info">
+          <span>ckdrl9287@gmail.com</span>
+        </span>
+        <span class="contact-icon contact-mail" id="contact-mail">
+          <i class="xi-mail"></i>
+        </span>
+      </li>
+      <li class="contact-toggle">
+        <span class="contact-info">
+          <span>010-8880-9287</span>
+        </span>
+        <span class="contact-icon contact-call" id="contact-call">
+          <i class="xi-call"></i>
+        </span>
+      </li>
+      <li>
+        <span class="contact-icon contact-github" id="contact-github">
+          <i class="xi-github"></i>
+        </span>
+      </li>
+      <li>
+        <span class="contact-icon contact-kakao" id="contact-kakao">
+          <i class="xi-kakaotalk"></i>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Nav -->
+  <div class="nav">
+    <div class="my-face">
+      <a href="#">
+        <img src="./img/my-face.png" alt="얼굴">
+      </a>
+    </div>
+    <ul>
+      <li class="nav-list"><a href="#about">about</a></li>
+      <li class="nav-list"><a href="#education">education</a></li>
+      <li class="nav-list"><a href="#skills">skills</a></li>
+      <li class="nav-list"><a href="#projects">projects</a></li>
+      <li class="nav-list"><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Main -->
+    <div class="main">
+      <!-- About -->
+      <section class="about" id="about">
+        <h1 class="section-title">about</h1>
+        <p class="about-desc">
+          사용자 경험과 디테일을 중요하게 생각하는<br />
+          프론트엔드 개발자 안창기입니다.
+        </p>
+        <div class="section-inner about-inner">
+          <div class="about-info">
+            <div class="about-identity">
+              <h2 class="about-name">안창기</h2>
+              <p class="about-role">Frontend Developer</p>
+            </div>
+            <ul class="about-keywords">
+              <li>#성실함</li>
+              <li>#배움에 대한 열정</li>
+              <li>#호기심 많음</li>
+              <li>#디테일 집착</li>
+              <li>#책임감</li>
+            </ul>
+          </div>
+          <ul class="about-qa-lists">
+            <li class="about-qa-card">
+              <h4>Q. 프론트엔드 개발을 선택한 이유는?</h4>
+              <p>
+                결과가 바로 눈에 보이는 작업을 좋아합니다.<br/>
+                프론트엔드는 코드의 변화가 즉시 화면과 사용자 경험으로 이어진다는 점에서 큰 매력을 느꼈습니다.
+              </p>
+            </li>
+            <li class="about-qa-card">
+              <h4>Q. 프론트엔드 개발에 있어 중요하게 생각하는 것은?</h4>
+              <p>
+                프론트엔드는 사용자가 직접 보고 조작하는 영역이기 때문에, 디자인의 일관성과 사용자 흐름이 중요하다고 생각합니다.<br/>
+                또한 개발자 관점이 아닌 사용자의 입장에서 화면을 바라보는 시각이 좋은 프론트엔드의 핵심이라고 느꼈습니다.
+              </p>
+            </li>
+            <li class="about-qa-card">
+              <h4>Q. 개발자로서 성장했다고 느꼈던 경험은?</h4>
+              <p>
+                처음에는 멋있어 보이는 기능을 구현하는 데 집중했지만,<br/>
+                프로젝트를 진행하면서 중요한 것은 ‘내가 만들고 싶은 기능’이 아니라 ‘사용자가 어떻게 느끼고 사용하는가’라는 것을 깨닫게 되었습니다.<br/>
+                사용자 관점에서 우선순위를 다시 생각하게 된 이 경험을 통해
+                개발자로서 한 단계 성장했다고 느꼈습니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Education -->
+      <section class="education" id="education">
+        <h1 class="section-title">education</h1>
+        <div class="section-inner education-inner">
+          <div class="edu-list edu-list01">
+            <h3 class="edu-name">한국해양대학교</h3>
+            <p class="edu-info">
+              <span class="edu-detail">데이터정보학과</span>
+              <span class="edu-period">2014.03 ~ 2020.02</span>
+            </p>
+            <p class="edu-result">졸업</p>
+          </div>
+          <div class="edu-list edu-list02">
+            <h3 class="edu-name">고용노동부 국비지원</h3>
+            <p class="edu-info">
+              <span class="edu-detail">프론트엔드 개발자(자바스크립트, 리엑트) 실무 양성과정 A</span>
+              <span class="edu-period">2024.07.30 ~ 2025.01.27</span>
+            </p>
+            <p class="edu-result">수료</p>
+          </div>
+        </div>
+      </section>
+      <!-- Skills -->
+      <section class="skills" id="skills">
+        <h1 class="section-title">skills</h1>
+        <div class="section-inner skills-inner">
+          <div class="skills-left">
+            <!-- Language -->
+            <div class="skills-list">
+              <h3 class="skills-category">language</h3>
+              <ul class="skills-category-wrap">
+                <li class="skill">
+                  <img src="./img/HTML.svg" alt="">
+                  <span>HTML의 기본적인 구조와 태그를 자유롭게 활용 할 수 있습니다.</span>
+                </li>
+                <li class="skill">
+                  <img src="./img/CSS.svg" alt="">
+                  <span>순수 CSS만을 이용하여 레이아웃을 할 수 있습니다.</span>
+                </li>
+                <li class="skill">
+                  <img src="./img/JavaScript.svg" alt="">
+                  <span>ES6+ 문법을 활용하여 코드를 작성 할 수 있습니다.</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Preprocessor -->
+            <div class="skills-list">
+              <h3 class="skills-category">preprocessor</h3>
+              <ul class="skills-category-wrap">
+                <li class="skill">
+                  <img src="./img/Sass.svg" alt="">
+                  <span>Sass를 활용하여 팀 프로젝트에서 효율적인 스타일 관리를 경험하였습니다.</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Design -->
+            <div class="skills-list">
+              <h3 class="skills-category">design</h3>
+              <ul class="skills-category-wrap">
+                <li class="skill">
+                  <img src="./img/Figma-Dark.svg" alt="">
+                  <span>팀 협업, 개인작업으로 인한 프로젝트 기획, 와이어프레임, 스타일가이드를 만든 경험이 있습니다.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills-right">
+            <!-- Library -->
+            <div class="skills-list">
+              <h3 class="skills-category">library</h3>
+              <ul class="skills-category-wrap">
+                <li class="skill">
+                  <img src="./img/React.svg" alt="">
+                  <span>컴포넌트 기반 구조와 JSX, 상태 관리(useState, useEffect), 라우팅(Router DOM), props 전달 등을 익혔습니다.</span>
+                </li>
+                <li class="skill">
+                  <img src="./img/Swiper-Dark.png" alt="">
+                  <span>Swiper를 사용해 이미지 슬라이드 쇼를 구현하며 기본 옵션 설정과 구조를 익혔습니다.</span>
+                </li>
+                <li class="skill">
+                  <img src="./img/Bootstrap.svg" alt="">
+                  <span>Bootstrap의 기본 구조와 컴포넌트를 활용해 간단한 예제를 제작해본 경험이 있습니다.</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Etc -->
+            <div class="skills-list">
+              <h3 class="skills-category">etc</h3>
+              <ul class="skills-category-wrap">
+                <li class="skill">
+                  <img src="./img/Github-Dark.svg" alt="">
+                  <span>외부 저장과 협업을 위해 사용하였으며, 자동화된 빌드 및 배포 프로세스를 설정한 경험이 있습니다.</span>
+                </li>
+                <li class="skill">
+                  <img src="./img/Git.svg" alt="">
+                  <span>코드 저장과 버전 기록을 위해 사용했습니다.</span>
+                </li>
+                <li class="skill">
+                  <img src="./img/Netlify-Light.svg" alt="">
+                  <span>다양한 정적 웹 프로젝트(React, Sass, Html/Css/Js)를 직접 배포해보며 배포 환경을 경험해봤습니다.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <div class="section-trigger start"></div>
+        <h1 class="section-title">projects</h1>
+        <div class="section-inner projects-inner">
+          <div class="filter-container">
+            <div class="left-filter">
+              <h3 class="filter-title">사용기술</h3>
+              <div class="left-check-list check-list">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input skill-checkbox" value="HTML5">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text" >HTML5</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input skill-checkbox" value="CSS3">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text" >CSS3</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input skill-checkbox" value="JavaScript">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text" >JavaScript</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input skill-checkbox" value="React">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text" >React</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input skill-checkbox" value="SCSS">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text" >SCSS</span>
+                </label>
+              </div>
+            </div>
+            <div class="right-filter">
+              <h3 class="filter-title">다른 옵션</h3>
+              <div class="right-check-list check-list">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input" id="filter-all">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text" >모든 프로젝트 보기</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input option-checkbox" value="개인">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text" >개인 프로젝트</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input option-checkbox" value="팀">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text" >팀 프로젝트</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input" id="filter-responsive">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text" >반응형</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="project-container">
+            <ul class="project-list">
+              <!-- 프로젝트 들어갈 자리 -->
+            </ul>
+          </div>
+        </div>
+        <div class="section-trigger end"></div>
+      </section>
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h1 class="section-title">contact</h1>
+        <div class="section-inner contact-inner">
+          <div class="contact-text-wrap">
+            <p class="thank-bg">
+              <span>t</span><span>h</span><span>a</span><span>n</span><span>k</span><span>y</span><span>o</span><span>u</span>
+            </p>
+            <h2 class="thank-title">봐주셔서 감사합니다.</h2>
+            <ul class="commitment">
+              <li>끊임없이 고민하고 <b>노력</b>하며 <b>새로운 도전</b>을 멈추지 않겠습니다.</li>
+              <li>사용자에게 <b>더 나은 경험</b>을 선물할 수 있는 개발자가 되겠습니다.</li>
+              <li>항상 <b>최선</b>을 다하는 프론트엔드 개발자가 되겠습니다.</li>
+            </ul>
+            <ul class="contact-lists">
+              <li class="contact-item contact-item-mail">
+                <div class="container-panel mail-container">
+                  <h3 class="container-title">email</h3>
+                  <div class="container-contents">
+                    <div class="container-main">
+                      <span>
+                        <i class="fa-solid fa-square-envelope"></i>
+                      </span>
+                      <span class="copy-text">ckdrl9287@gmail.com</span>
+                    </div>
+                    <div class="container-actions">
+                      <a href="mailto:ckdrl9287@gmail.com">바로 보내기</a>
+                      <button class="copyBtn">복 사</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mail-triangle triangle"></div>
+                <span class="contact-icon contact-mail">
+                  <i class="xi-mail"></i>
+                </span>
+              </li>
+              <li class="contact-item contact-item-call">
+                <div class="container-panel call-container">
+                  <h3 class="container-title">phone</h3>
+                  <div class="container-contents">
+                    <div class="container-main">
+                      <span>
+                        <i class="fa-solid fa-square-phone"></i>
+                      </span>
+                      <span class="copy-text">010-8880-9287</span>
+                    </div>
+                    <div class="container-actions">
+                      <a href="tel:010-8880-9287">바로 연결</a>
+                      <button class="copyBtn">복 사</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="call-triangle triangle"></div>
+                <span class="contact-icon contact-call">
+                  <i class="xi-call"></i>
+                </span>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon contact-github">
+                  <i class="xi-github"></i>
+                </span>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon contact-kakao">
+                  <i class="xi-kakaotalk"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <script src="js/loading.js"></script>
+  <script src="js/navContact.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/sectionContact.js"></script>
+</body>
+</html>
