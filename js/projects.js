@@ -22,7 +22,7 @@ function createProjectCard(card) {
   
   //일치하는 프로젝트 없을 때 텍스트 생성
   if(card.length === 0) {
-    projectlist.innerHTML = '<p>일치하는 프로젝트가 없습니다.</p>';
+    projectlist.innerHTML = '<p class="no-project">일치하는 프로젝트가 없습니다.</p>';
     return;
   }
 
