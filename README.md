@@ -73,4 +73,4 @@
 
 ## 📂 링크 
 <br />
-- <a href="https://changgi-portfolio.netlify.app/">DEMO</a> <br />
+- <a href="https://changgi-portfolio.netlify.app/" target="_blank">DEMO</a> <br />
