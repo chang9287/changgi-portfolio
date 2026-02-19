@@ -7,7 +7,7 @@
     
   <br />
   
-  <a href="https://github.com/chang9287/EnglishViliage.git">
+  <a href="https://github.com/chang9287/changgi-portfolio.git">
   <img src="https://img.shields.io/badge/GitHub%20Pages-Active-AEF359?&logo=github&logoColor=white" alt="GitHub-Pages" />
   </a>
   <br />
