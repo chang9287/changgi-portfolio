@@ -823,6 +823,9 @@ body.qr-modal-open {
 }
 
 /* Main - Contact */
+.main > section.contact {
+  border-bottom: none;
+}
 .contact .contact-text-wrap{
   display: flex;
   flex-direction: column;

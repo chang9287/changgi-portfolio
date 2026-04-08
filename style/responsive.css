@@ -449,11 +449,6 @@
 }
 
 @media (max-width: 465px) {
-  /* .loading-bar svg {
-    width: 100%;
-    max-width: 410px;
-    height: auto;
-  } */
   .section-inner {
     margin: 10px auto;
   }
