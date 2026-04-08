@@ -201,6 +201,11 @@ function openProjectModal(project) {
 
   document.body.appendChild(modalContainer);
   document.body.style.overflow = 'hidden';
+  /* 
+  document.body.appendChild(modalContainer);
+  document.body.classList.add('modal-open');
+  document.documentElement.classList.add('modal-open');
+  */
 
   //닫기 버튼 누르면 모달창 닫힘
   const modalCloseBtn = document.querySelector('.project-modal-close-btn');
@@ -214,6 +219,11 @@ function openProjectModal(project) {
 function closeProjectModal(modalContainer) {
   modalContainer.remove();
   document.body.style.overflow = '';
+  /* 
+  modalContainer.remove();
+  document.body.classList.remove('modal-open');
+  document.documentElement.classList.remove('modal-open');
+  */
 }
 
 document.addEventListener('DOMContentLoaded', () => {

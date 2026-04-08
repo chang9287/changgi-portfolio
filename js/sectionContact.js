@@ -77,7 +77,6 @@ function  sectionContactEffect() {
   //call일 때
   contactHoverEvent(callIcon, callContent, mailContent, calltriangle, mailtriangle);
 }
-sectionContactEffect();
 
 //복사 button 클릭시 복사 및 alert 생성 함수
 function copyClipboard() {
@@ -97,3 +96,50 @@ function copyClipboard() {
   });
 }
 copyClipboard();
+
+function mobileContactAction() {
+  if (window.innerWidth > 1024) return;
+
+  const mailItem = document.querySelector('.contact-item-mail');
+  const callItem = document.querySelector('.contact-item-call');
+  const mailContent = document.querySelector('.mail-container');
+  const callContent = document.querySelector('.call-container');
+  const mailtriangle = document.querySelector('.mail-triangle');
+  const calltriangle = document.querySelector('.call-triangle');
+
+  // 패널 숨김
+  if (mailContent) mailContent.style.display = 'none';
+  if (callContent) callContent.style.display = 'none';
+  if (mailtriangle) mailtriangle.style.display = 'none';
+  if (calltriangle) calltriangle.style.display = 'none';
+
+  if (mailItem) {
+    mailItem.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('ckdrl9287@gmail.com');
+        alert('이메일이 복사되었습니다: ckdrl9287@gmail.com');
+      } catch (err) {
+        alert('복사 실패: ' + err);
+      }
+    });
+  }
+
+  if (callItem) {
+    callItem.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('010-8880-9287');
+        alert('전화번호가 복사되었습니다: 010-8880-9287');
+      } catch (err) {
+        alert('복사 실패: ' + err);
+      }
+    });
+  }
+}
+
+
+//화면 크기에 따라 contact 동작 분기
+if (window.innerWidth > 1024) {
+  sectionContactEffect();
+} else {
+  mobileContactAction();
+}

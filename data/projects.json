@@ -58,7 +58,7 @@
     "period" : "1개월 반",
     "githubLink" : "https://github.com/chang9287/changgi-portfolio",
     "siteLink" : "https://changgi-portfolio.netlify.app/",
-    "responsive" : false,
+    "responsive" : true,
     "goal" : "단순히 작업물을 나열하는 것이 아니라, 사용자가 정보를 흐름에 따라 자연스럽게 탐색할 수 있도록 구성하는 것을 목표로 했습니다.",
     "features" : "로딩 페이지에 SVG 애니메이션을 적용해서 구현했고, JSON 파일로 프로젝트 데이터를 분리하여 동적으로 렌더링하도록 구현했습니다. 또한 체크박스 기반 필터 기능과 IntersectionObserver를 활용한 스크롤 애니메이션을 적용했습니다.",
     "learned" : "단순히 기능을 구현하는 것에 그치는 것이 아니라, 프로젝트가 확장될 상황까지 고려해 구조를 설계하는 것이 중요하다는 점을 느꼈습니다. 특히 프로젝트 수가 늘어나면서 기존 구조의 한계를 경험하며, 처음부터 확장성을 염두에 둔 설계의 필요성을 깨닫게 되었습니다."
