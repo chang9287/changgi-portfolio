@@ -28,7 +28,7 @@ export default function KakaoModal({ onClose }: KakaoModalProps) {
         <div className="absolute top-0.5 right-0.5 flex justify-center items-center">
           <X
             size={32}
-            strokeWidth={3}
+            strokeWidth={2}
             className="xi-close cursor-pointer text-gray-500/70 hover:text-main-black transition duration-300 hover:scale-105" 
             onClick={onClose} 
           />

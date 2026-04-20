@@ -1,7 +1,9 @@
+import SectionTitle from "../../components/ui/SectionTitle";
+
 export default function SkillSection() {
   return (
     <section>
-      <h1>skill 섹션</h1>
+      <SectionTitle title={"skills"} />
     </section>
   );
 }
