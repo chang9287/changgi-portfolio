@@ -1,0 +1,45 @@
+/* 폰트 */
+@font-face {
+    font-family: 'YPairing';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/YPairingFont.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'YPairing';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/YPairingFont-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* Tailwind CSS */
+@import "tailwindcss";
+
+/* Theme */
+@theme {
+  /* 폰트 */
+  --font-main: "Noto Sans KR", sans-serif;
+  --font-hero: "YPairing", sans-serif;
+  --font-title: "Saira Extra Condensed", sans-serif;
+
+  /* 컬러 - 폰트 */
+  --color-main-black: #343A40;
+  --color-main-brown: #6C5D53;
+  --color-edu-title: #702AC8;
+  --color-edu-period: #BD5D38;
+  --color-edu-result: #0277BD;
+
+  /* 컬러 - 배경, 아이콘 */
+  --color-home-bg: #F7F2EB;
+  --color-icon-mail-hover-bg: #1FBAFF;
+  --color-icon-call-hover-bg: #57D957;
+  --color-icon-github-hover: #181717;
+  --color-icon-github-hover-bg: #F3F3F3;
+  --color-icon-kakao-hover: #391B1B;
+  --color-icon-kakao-hover-bg: #FAE300;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-main-black);
+}
