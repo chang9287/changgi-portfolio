@@ -28,6 +28,10 @@
   --color-edu-title: #702AC8;
   --color-edu-period: #BD5D38;
   --color-edu-result: #0277BD;
+  --color-skills-category: #A78B71;
+  --color-skills-hover-category: #7A5230;
+  --color-skills-active-category: #4E3422;
+  
 
   /* 컬러 - 배경, 아이콘 */
   --color-home-bg: #F7F2EB;

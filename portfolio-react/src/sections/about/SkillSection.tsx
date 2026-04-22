@@ -4,64 +4,95 @@ import { skills } from "../../data/skills";
 
 
 export default function SkillSection() {
+  /* 카테고리 active상태관리 */
+  const [activeCategory, setActiveCategory] = useState("");
+
+  /* 아이콘 선택 상태관리 */
+  const [selectedIcon, setSelectedIcon] = useState("");
   
   /* Categories 메뉴 */
   const categories = [
-    "Language", "", ""
+    "Language", 
+    "Styling", 
+    "Front-End", 
+    "Library", 
+    "Tools", 
+    "Design"
   ]
 
-
-  /* 작업 순서 */
-  // Categories 배열을 가지고 메뉴 만들기
-  // 메뉴의 카테고리 클릭시 active상태
-  // 처음 상태는 아무것도 선택 안 된 상태
-  // 밑에 아이콘 이미지는 map으로 전부 다 불러오기 
-  // 메뉴가 클릭되어서 active상태라면 skill.category와 비교
-  // 같으면 가만히 두고 다르면 blur처리
-  // blur 된 아이콘은 클릭 불가능
-  // 아이콘 클릭시 선택된 아이콘에 해당되는 skill의 id값 저장
-  // 만약 다시 같은 아이콘 클릭하면 초기화
-  // 선택된 아이콘을 기준으로 skills에서 해당 아이콘 찾기
-  // 찾은 아이콘의 description을 출력하고
-  // 찾은 상태가 아니라면 "기술 아이콘을 선택하면 사용 경험을 볼 수 있습니다." 이게 출력 되어야함
+  /* 선택된 아이콘 찾기 */
+  const selectedSkill = skills.find((skill) => skill.id === selectedIcon );
 
   return (
     <section>
       <SectionTitle title={"skills"} />
-      <div>
-        {skills.map((skill) => (
-          <div key={skill.id}>{skill.category}</div>
-        ))}
-        {/* icon-category */}
-        {/* 
-          카테고리 선택 
-          - 해당 아이콘을 제외한 나머지 아이콘 블러처리
-          - 선택 한 번 더 누르면 원상복귀
-        */}
-        <ul>
-          <li></li>
-        </ul>
-        <div>
-          {/* icon-image */}
+      <div className="mt-8 mx-4 flex flex-col gap-10">
+        {/* categories 메뉴 */}
+        <div className="w-full px-5">
+          <ul className="bg-home-bg py-1 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-4 max-w-[800px] w-full justify-items-center rounded-2xl">
+          {categories.map((category) => (
+            <li key={category} className="py-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setActiveCategory((click) => (click ===   category ? "" : category));
+                  setSelectedIcon("");
+                }}
+                className={`outline-none font-bold cursor-pointer text-xl hover:text-skills-active-category transition duration-200 ${activeCategory === category ? "text-skills-active-category underline" : "text-skills-category"}`}
+              >
+                {category}
+              </button>
+            </li>
+          ))}
+          </ul>
         </div>
-        <p>
-          {/* icon-description */}
-          {/* 
-            아이콘 선택하면 해당 아이콘에 맞는 description
-          */}
-        </p>
+        {/* Skills 아이콘 이미지 */}
+        <div className="px-6">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(80px,1fr))] gap-4 justify-items-center w-full py-3">
+          {skills.map((skill) => {
+            const isblur = activeCategory !== "" && skill.category !== activeCategory;
+
+            return (
+              <button 
+                key={skill.id}
+                type="button"
+                disabled={isblur}
+                onClick={() => 
+                  setSelectedIcon((click) => (click === skill.id ? "" : skill.id))
+                }
+                className={`
+                  outline-none cursor-pointer w-[80px] h-[80px] 
+                  ${isblur ? "blur-[5px] opacity-40" : ""} 
+                  ${selectedIcon === skill.id ? "shadow-[0_0_0_2px_#222]" : ""}
+                `}
+              >
+                <img 
+                  src={skill.img} 
+                  alt={skill.name}
+                  className="w-full h-full"
+                />
+              </button>
+              
+            );
+          })}
+          </div>
+        </div>
+        {/* Skills 아이콘 경험 */}
+        <div className="px-6">
+          <h6 className={`
+            text-lg text-gray-500 font-bold ml-1 mb-1 
+            ${selectedSkill ? "text-main-black" : ""}
+          `}>
+            {selectedSkill ? selectedSkill.name : "선택된 기술"}
+          </h6>
+          <p className={`
+            border border-main-black rounded-2xl py-3 px-6 text-md leading-relaxed text-gray-500 
+            ${selectedSkill ? "text-main-black" : ""}
+          `}>
+            {selectedSkill ? selectedSkill.description : "기술 아이콘을 선택하면 사용 경험을 볼 수 있습니다."}
+          </p>
+        </div>
       </div>
     </section>
   );
 }
-
-/*
-skills.ts 구조
-{
-  id: "html",
-  name: "HTML",
-  category: "Language",
-  img: icons.html,
-  description: "HTML의 기본적인 구조와 태그를 자유롭게 활용 할 수 있습니다.",
-}
-*/
