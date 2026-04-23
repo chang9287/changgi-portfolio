@@ -2,6 +2,15 @@ import { useState } from "react";
 import SectionTitle from "../../components/ui/SectionTitle";
 import { skills } from "../../data/skills";
 
+/* Categories 메뉴 */
+const categories = [
+  "Language", 
+  "Styling", 
+  "Front-End", 
+  "Library", 
+  "Tools", 
+  "Design"
+]
 
 export default function SkillSection() {
   /* 카테고리 active상태관리 */
@@ -10,16 +19,6 @@ export default function SkillSection() {
   /* 아이콘 선택 상태관리 */
   const [selectedIcon, setSelectedIcon] = useState("");
   
-  /* Categories 메뉴 */
-  const categories = [
-    "Language", 
-    "Styling", 
-    "Front-End", 
-    "Library", 
-    "Tools", 
-    "Design"
-  ]
-
   /* 선택된 아이콘 찾기 */
   const selectedSkill = skills.find((skill) => skill.id === selectedIcon );
 
