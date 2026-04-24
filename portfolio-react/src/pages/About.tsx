@@ -1,3 +1,5 @@
+import ProfileSection from "../sections/about/ProfileSection";
+import SummarySection from "../sections/about/SummarySection";
 import EducationSection from "../sections/about/EducationSection";
 import SkillSection from "../sections/about/SkillSection";
 
