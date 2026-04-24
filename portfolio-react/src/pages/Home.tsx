@@ -1,5 +1,5 @@
 import HeroSection from "../sections/home/HeroSection";
-import HomeNav from "../components/sections/HomeNav";
+import HomeNav from "../components/parts/HomeNav";
 
 export default function Home() {
   return (

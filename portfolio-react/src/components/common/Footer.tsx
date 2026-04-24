@@ -1,4 +1,4 @@
-import FooterContact from "../sections/FooterContact";
+import FooterContact from "../parts/FooterContact";
 
 export default function Footer() {
   return (
