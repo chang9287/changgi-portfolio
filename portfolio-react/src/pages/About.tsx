@@ -4,7 +4,7 @@ import SkillSection from "../sections/about/SkillSection";
 export default function About() {
   return (
     <main className="py-16 px-4">
-      <div className="max-w-[1280px] w-full mx-auto flex flex-col gap-20">
+      <div className="max-w-6xl w-full mx-auto flex flex-col gap-20">
         <EducationSection />
         <SkillSection />
       </div>

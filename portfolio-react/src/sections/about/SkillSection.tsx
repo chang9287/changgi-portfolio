@@ -27,8 +27,8 @@ export default function SkillSection() {
       <SectionTitle title={"skills"} />
       <div className="mt-8 mx-4 flex flex-col gap-10">
         {/* categories 메뉴 */}
-        <div className="w-full px-5">
-          <ul className="bg-home-bg py-1 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-4 max-w-[800px] w-full justify-items-center rounded-2xl">
+        <div className="w-full px-6">
+          <ul className="bg-home-bg py-1 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-4 w-full justify-items-center rounded-2xl">
           {categories.map((category) => (
             <li key={category} className="py-2">
               <button
@@ -60,7 +60,7 @@ export default function SkillSection() {
                   setSelectedIcon((click) => (click === skill.id ? "" : skill.id))
                 }
                 className={`
-                  outline-none cursor-pointer w-[80px] h-[80px] 
+                  outline-none cursor-pointer w-20 h-20
                   ${isblur ? "blur-[5px] opacity-40" : ""} 
                   ${selectedIcon === skill.id ? "shadow-[0_0_0_2px_#222]" : ""}
                 `}
