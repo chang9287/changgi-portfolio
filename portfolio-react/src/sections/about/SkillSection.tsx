@@ -60,8 +60,8 @@ export default function SkillSection() {
                   setSelectedIcon((click) => (click === skill.id ? "" : skill.id))
                 }
                 className={`
-                  outline-none cursor-pointer w-20 h-20
-                  ${isblur ? "blur-[5px] opacity-40" : ""} 
+                  outline-none cursor-pointer size-20
+                  ${isblur ? "blur-[5px] opacity-40" : ""}
                   ${selectedIcon === skill.id ? "shadow-[0_0_0_2px_#222]" : ""}
                 `}
               >
