@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="w-full h-16 border">
-      <div className="max-w-[1280px] mx-auto h-full border flex justify-between items-center px-3">
+      <div className="max-w-6xl mx-auto h-full border flex justify-between items-center px-3">
         <button className="dark-mode-btn border px-4 py-2">버튼</button>
         <nav className="header-nav">
           <ul className="flex gap-5">
