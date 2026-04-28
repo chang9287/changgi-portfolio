@@ -1,10 +1,10 @@
 /* 타입 정의 */
-type Previews = {
+type Preview = {
   title: string;
   image: string;
 }
 
-export type Project = {
+export type ProjectData = {
   id: string;
   title: string;
   summary: string;
@@ -13,10 +13,9 @@ export type Project = {
   skills: string[];
   period: string;
   role: string;
-  type: string;
+  type: "personal" | "team";
   demo?: string;
   github?: string;
-  previews: Previews[];
+  previews: Preview[];
   responsive: boolean;
-  content: string;
 }
