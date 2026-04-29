@@ -19,3 +19,7 @@ export type ProjectData = {
   previews: Preview[];
   responsive: boolean;
 }
+
+export type Project = ProjectData & {
+  content: string;
+}
