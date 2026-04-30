@@ -6,11 +6,16 @@ type DataModules = {
 
 type MdModules = {
   default: string;
-}
+};
 
 /* import.meta.glob */
-const dataModules = import.meta.glob<DataModules>('@/content/projects/*/data.ts', {eager: true});
-const mdModules = import.meta.glob<MdModules>('@/content/projects/*/index.md?raw', {eager: true});
+const dataModules = import.meta.glob<DataModules>('@/content/projects/*/data.ts', {
+  eager: true
+});
+const mdModules = import.meta.glob<MdModules>('@/content/projects/*/index.md', {
+  eager: true,
+  query: '?raw'
+});
 
 
 export const projects: Project[] = Object.entries(dataModules).map(([path, module]) => {
