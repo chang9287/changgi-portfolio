@@ -29,16 +29,23 @@
   --color-edu-period: #BD5D38;
   --color-edu-result: #0277BD;
   --color-profile-text-hover: #88593A;
+  --color-sub-black: #495057;
+  --color-sub-gray: #868E96;
 
 
   /* 컬러 - 배경, 아이콘 */
-  --color-home-bg: #F7F2EB;
+  --color-main-bg: #F7F6F3;
   --color-icon-mail-hover-bg: #1FBAFF;
   --color-icon-call-hover-bg: #57D957;
   --color-icon-github-hover: #181717;
   --color-icon-github-hover-bg: #F3F3F3;
   --color-icon-kakao-hover: #391B1B;
   --color-icon-kakao-hover-bg: #FAE300;
+  --color-skills-category: #A78B71;
+  --color-skills-active-category: #4E3422;
+  --color-contact-form-border: #DCD7CF;
+  --color-contact-form-input: #ddd;
+  --color-contact-button-hover: #525C66;
 }
 
 body {
