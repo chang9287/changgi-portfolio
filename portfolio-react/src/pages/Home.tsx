@@ -4,7 +4,7 @@ import HomeNav from "../components/parts/HomeNav";
 export default function Home() {
   return (
     <main className="min-h-[calc(100vh-64px-64px)] flex flex-col">
-      <div className="bg-home-bg w-full">
+      <div className="bg-main-bg w-full">
         <div className="max-w-6xl w-full mx-auto">
           <HeroSection />
         </div>
