@@ -15,6 +15,26 @@
 /* Tailwind CSS */
 @import "tailwindcss";
 
+/* 커스텀 애니메이션 효과 */
+@keyframes loading-wave {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  20% {
+    transform: translateY(-12px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+}
+
 /* Theme */
 @theme {
   /* 폰트 */
@@ -39,6 +59,9 @@
   --color-icon-github-hover-bg: #F3F3F3;
   --color-icon-kakao-hover: #391B1B;
   --color-icon-kakao-hover-bg: #FAE300;
+
+  /* 애니메이션 효과 */
+  --animate-loading-wave: loading-wave 2.5s ease-in-out infinite;
 }
 
 body {
