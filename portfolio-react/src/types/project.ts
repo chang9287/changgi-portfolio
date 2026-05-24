@@ -8,6 +8,7 @@ type Preview = {
 
 export type ProjectData = {
   id: string;
+  order: number;
   title: string;
   summary: string;
   thumbnail: string;

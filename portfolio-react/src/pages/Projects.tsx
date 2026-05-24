@@ -4,6 +4,7 @@ import ProjectCard from "@/components/parts/ProjectCard";
 
 export default function Projects() {
   console.log(projects);
+  console.log(projects.map((p) => [p.title, p.order]));
 
   return (
     <main className="py-16 px-4 bg-home-bg">

@@ -4,6 +4,7 @@ import { cafe24Images } from "./images";
 
 const data: ProjectData = {
   id: "cafe24-clone",
+  order: 3,
   title: "SnapLoom(카페24) 클론코딩",
   summary: "실제 쇼핑몰 서비스의 구매 흐름을 구현하며, 컴포넌트 기반 설계와 전역 상태 관리를 중심으로 UI와 기능을 구현한 클론코딩 프로젝트입니다.",
   thumbnail: cafe24Images.thumbnail,

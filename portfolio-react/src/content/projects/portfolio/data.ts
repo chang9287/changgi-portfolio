@@ -3,6 +3,7 @@ import { myPortfolioImages } from "./images";
 
 const data: ProjectData = {
   id: "portfolio",
+  order: 4,
   title: "포트폴리오 개인페이지",
   summary: "기존 HTML/CSS/JavaScript 기반 포트폴리오를 React, TypeScript 기반으로 재구성하며 컴포넌트 구조와 데이터 흐름을 개선한 프로젝트입니다.",
   thumbnail: myPortfolioImages.thumbnail,
