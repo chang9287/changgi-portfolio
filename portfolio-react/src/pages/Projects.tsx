@@ -6,13 +6,13 @@ export default function Projects() {
   console.log(projects);
 
   return (
-    <main className="py-16 px-4 border">
-      <div className="max-w-6xl w-full mx-auto flex flex-col gap-20 border">
+    <main className="py-16 px-4 bg-home-bg">
+      <div className="max-w-6xl w-full mx-auto flex flex-col gap-20">
         {/* 프로젝트 필터 */}
         <ProjectFilter />
 
         {/* 프로젝트 카드 */}
-        <div>
+        <div className="flex flex-col gap-10">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
