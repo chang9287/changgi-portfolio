@@ -16,7 +16,7 @@ export type ProjectData = {
   skills: Skill[];
   period: string;
   role: string;
-  type: "personal" | "team";
+  type: "personal" | "team" | null;
   demo?: string;
   github?: string;
   previews: Preview[];

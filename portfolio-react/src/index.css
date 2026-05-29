@@ -29,11 +29,16 @@
   --color-edu-period: #BD5D38;
   --color-edu-result: #0277BD;
   --color-profile-text-hover: #88593A;
+  --color-project-empty: #9b9288;
+  --color-projectfilter-title: #4F4337;
+  --color-projectfilter-subtitle: #6B5B4A;
+  --color-projectfilter-button-text: #6B5B4A;
   --color-projectcard-type: #8A7D6F;
   --color-projectcard-summary: #5D5953;
   --color-projectcard-keypoints: #655D54;
   --color-projectcard-chevronright: #C4B8AA;
   --color-projectcard-chevronright-hover: #6F6257;
+  
 
   /* 컬러 - 배경, 아이콘 */
   --color-home-bg: #F7F2EB;
@@ -43,9 +48,14 @@
   --color-icon-github-hover-bg: #F3F3F3;
   --color-icon-kakao-hover: #391B1B;
   --color-icon-kakao-hover-bg: #FAE300;
+  --color-projectfilter-bg: #DCD7D0;
+  --color-projectfilter-button-bg: #F2EBE1;
+  --color-projectfilter-button-accent: #8A7257;
   --color-projectcard-keypoints-bg: #F7F4EF;
 
   /* 컬러 - 선 */
+  --color-projectfilter-border: #D2C2AF;
+  --color-projectfilter-button-border: #CDBCA8;
   --color-projectcard-border: #E8E5DF;
   --color-projectcard-keypoints-border: #ECE6DD;
 }
