@@ -38,6 +38,7 @@
   --color-projectcard-keypoints: #655D54;
   --color-projectcard-chevronright: #C4B8AA;
   --color-projectcard-chevronright-hover: #6F6257;
+  --color-404page-text: #6C5D53;
   
 
   /* 컬러 - 배경, 아이콘 */
@@ -52,6 +53,8 @@
   --color-projectfilter-button-bg: #F2EBE1;
   --color-projectfilter-button-accent: #8A7257;
   --color-projectcard-keypoints-bg: #F7F4EF;
+  --color-404page-backbutton-hover-bg: #495057;
+
 
   /* 컬러 - 선 */
   --color-projectfilter-border: #D2C2AF;

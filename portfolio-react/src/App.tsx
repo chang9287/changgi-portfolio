@@ -1,23 +1,28 @@
 import { Routes, Route } from 'react-router-dom'
-import Header from './components/common/Header'
-import Footer from './components/common/Footer'
-import { Home, About, Projects, ProjectDetail, Contact } from './pages'
+import MainLayout from './layouts/MainLayout'
+import { Home, About, Projects, ProjectDetail, Contact, NotFound } from './pages'
 import './App.css'
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Routes>
+    <Routes>
+      <Route element={<MainLayout />}>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/projects/:id' element={<ProjectDetail />} />
         <Route path='/contact' element={<Contact />} />
-      </Routes>
-      <Footer />
-    </>
+      </Route>
+      <Route 
+        path='*' 
+        element={<NotFound 
+          targetName={"페이지"} 
+          linkTo={"/"} 
+          buttonText={"Home"} />
+        } 
+      />
+    </Routes>
   )
 }
 
