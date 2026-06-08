@@ -15,6 +15,14 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Route>
       <Route 
+        path='/projects/not-found' 
+        element={<NotFound 
+          targetName={"프로젝트"} 
+          linkTo={"/projects"} 
+          buttonText={"Projects"} />
+        } 
+      />
+      <Route 
         path='*' 
         element={<NotFound 
           targetName={"페이지"} 

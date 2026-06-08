@@ -20,14 +20,17 @@ const data: ProjectData = {
   github: "https://github.com/chang9287/public-renewal",
   previews: [
     {
+      id: "main-page",
       title: "메인 페이지",
       image: publicRenewalImages.mainPage,
     },
     {
+      id: "notice-page",
       title: "공지사항 페이지",
       image: publicRenewalImages.noticePage,
     },
     {
+      id: "faq-page",
       title: "FAQ 페이지",
       image: publicRenewalImages.faqPage,
     }

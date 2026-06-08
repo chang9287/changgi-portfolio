@@ -1,6 +1,3 @@
 export { default as ProjectHeroSection } from './ProjectHeroSection'
-export { default as ProjectOverviewSection } from './ProjectOverviewSection'
-export { default as ProjectProblemSection } from './ProjectProblemSection'
-export { default as ProjectFeatureSection } from './ProjectFeatureSection'
 export { default as ProjectPreviewSection } from './ProjectPreviewSection'
-export { default as ProjectLearnedSection } from './ProjectLearnedSection'
+export { default as ProjectMarkdownSection } from './ProjectMarkdownSection'

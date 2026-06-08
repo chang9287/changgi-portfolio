@@ -20,6 +20,7 @@ const data: ProjectData = {
   github: "https://github.com/chang9287/changgi-portfolio",
   previews: [
     {
+      id: "main-page",
       title: "메인 페이지",
       image: myPortfolioImages.mainPage,
     }

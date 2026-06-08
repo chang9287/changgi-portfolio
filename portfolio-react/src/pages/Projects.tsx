@@ -85,7 +85,7 @@ export default function Projects() {
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-20">
         {/* 프로젝트 필터 */}
         <ProjectFilter 
-          projects={projects} 
+          projects={projects}
           clickSkillButton={clickSkillButton}
           clickOptionButton={clickOptionButton}
           selectedSkills={selectedSkills}

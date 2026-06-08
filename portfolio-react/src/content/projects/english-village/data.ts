@@ -20,26 +20,32 @@ const data: ProjectData = {
   github: "https://github.com/chang9287/English-Village",
   previews: [
     {
+      id: "main-page",
       title: "메인 페이지",
       image: englishVillageImages.mainPage,
     },
     {
+      id: "about-page",
       title: "마을 소개 페이지",
       image: englishVillageImages.aboutPage,
     },
     {
+      id: "map-page",
       title: "오시는 길 페이지",
       image: englishVillageImages.mapPage,
     },
     {
+      id: "test-page",
       title: "학습 테스트 페이지",
       image: englishVillageImages.testPage,
     },
     {
+      id: "program-page",
       title: "프로그램 신청 페이지",
       image: englishVillageImages.programPage,
     },
     {
+      id: "reservation-page",
       title: "프로그램 예약 페이지",
       image: englishVillageImages.reservationPage,
     }

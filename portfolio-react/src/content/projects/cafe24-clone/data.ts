@@ -20,30 +20,37 @@ const data: ProjectData = {
   github: "https://github.com/chang9287/react-shoppingmall",
   previews: [
     {
+      id: "main-page",
       title: "메인 페이지",
       image: cafe24Images.mainPage,
     },
     {
+      id: "category-page",
       title: "카테고리 페이지",
       image: cafe24Images.categoryPage,
     },
     {
+      id: "product-detail-page",
       title: "상품 상세 페이지",
       image: cafe24Images.productDetailPage,
     },
     {
+      id: "photo-review-page",
       title: "포토 리뷰 페이지",
       image: cafe24Images.photoReviewPage,
     },
     {
+      id: "photo-review-detail-page",
       title: "포토 리뷰 상세 페이지",
       image: cafe24Images.photoReviewDetailPage,
     },
     {
+      id: "login-page",
       title: "로그인 페이지",
       image: cafe24Images.loginPage,
     },
     {
+      id: "cart-page",
       title: "장바구니 페이지",
       image: cafe24Images.cartPage,
     }
