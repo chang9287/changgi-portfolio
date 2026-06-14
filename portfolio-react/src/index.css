@@ -28,7 +28,8 @@
   --color-edu-title: #702AC8;
   --color-edu-period: #BD5D38;
   --color-edu-result: #0277BD;
-  --color-profile-text-hover: #88593A;
+  --color-profile-description: #777;
+  --color-profile-info-title: #999;
 
 
   /* 컬러 - 배경, 아이콘 */
@@ -39,6 +40,9 @@
   --color-icon-github-hover-bg: #F3F3F3;
   --color-icon-kakao-hover: #391B1B;
   --color-icon-kakao-hover-bg: #FAE300;
+  --color-profile-info-border: #EEE8E1;
+  --color-profile-info-bg: #F9F7F4;
+  --color-profile-keywords-bg: #F5F1EC;
 }
 
 body {
