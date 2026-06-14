@@ -52,8 +52,8 @@ export default function ProfileSection() {
         >
           FRONT-END DEVELOPER
         </p>
-        <div className="py-2.5 px-7 flex flex-col gap-6">
-          <div className="grid grid-cols-[180px_1fr] gap-10 items-center">
+        <div className="py-2.5 px-4 md:px-7 flex flex-col gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-10 items-center">
             <div className="flex justify-center items-center">
               <img 
                 src={MyFace} 
@@ -62,11 +62,11 @@ export default function ProfileSection() {
               />
             </div>
             <div className="flex flex-col gap-2.5">
-              <h1 className="font-bold text-4xl">안창기</h1>
-              <p className="text-profile-description">
+              <h1 className="font-bold text-3xl md:text-4xl text-center md:text-left">안창기</h1>
+              <p className="text-profile-description text-sm md:text-base">
                 정보 구조와 UI 흐름을 고민하며, 사용자가 자연스럽게 이해할 수 있는 화면을 구현합니다.
               </p>
-              <div className="grid grid-cols-3 gap-3 mt-4">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-4">
                 {profileInfo.map((info) => (
                   <div className="flex flex-col gap-1.5 px-4 py-3.5 border border-profile-info-border bg-profile-info-bg rounded-2xl">
                     <span className="text-xs font-semibold text-profile-info-title">
@@ -91,7 +91,7 @@ export default function ProfileSection() {
               </div>
             </div>
           </div>
-          <ul className="flex gap-3">
+          <ul className="flex flex-wrap justify-center md:justify-start gap-3">
             {keywords.map((keyword) => (
               <li
                 key={keyword.id}
