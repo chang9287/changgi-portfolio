@@ -1,10 +1,15 @@
 import HeroSection from "../sections/home/HeroSection";
 import HomeNav from "../components/parts/HomeNav";
 
+const GRID_BACKGROUND = `
+  [background-image:linear-gradient(rgba(108,93,83,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(108,93,83,0.06)_1px,transparent_1px)]
+  [background-size:60px_60px]
+`;
+
 export default function Home() {
   return (
     <main className="min-h-[calc(100vh-64px-64px)] flex flex-col">
-      <div className="bg-home-bg w-full">
+      <div className={`bg-home-bg w-full ${GRID_BACKGROUND}`}>
         <div className="max-w-6xl w-full mx-auto">
           <HeroSection />
         </div>
