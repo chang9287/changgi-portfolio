@@ -15,6 +15,26 @@
 /* Tailwind CSS */
 @import "tailwindcss";
 
+/* 커스텀 애니메이션 효과 */
+@keyframes loading-wave {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  20% {
+    transform: translateY(-12px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+}
+
 /* Theme */
 @theme {
   /* 폰트 */
@@ -41,9 +61,12 @@
   --color-projectcard-chevronright-hover: #6F6257;
   --color-404page-text: #6C5D53;
   
+  --color-sub-black: #495057;
+  --color-sub-gray: #868E96;
+
 
   /* 컬러 - 배경, 아이콘 */
-  --color-home-bg: #F7F2EB;
+  --color-main-bg: #F7F6F3;
   --color-icon-mail-hover-bg: #1FBAFF;
   --color-icon-call-hover-bg: #57D957;
   --color-icon-github-hover: #181717;
@@ -66,6 +89,14 @@
   --color-projectcard-border: #E8E5DF;
   --color-projectcard-keypoints-border: #ECE6DD;
   --color-projectdetail-preview-border: #D8CEC1;
+
+  /* 애니메이션 효과 */
+  --animate-loading-wave: loading-wave 2.5s ease-in-out infinite;
+  --color-skills-category: #A78B71;
+  --color-skills-active-category: #4E3422;
+  --color-contact-form-border: #DCD7CF;
+  --color-contact-form-input: #ddd;
+  --color-contact-button-hover: #525C66;
 }
 
 body {
