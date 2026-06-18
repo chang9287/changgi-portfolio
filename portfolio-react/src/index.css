@@ -45,6 +45,7 @@
   /* 컬러 - 폰트 */
   --color-main-black: #343A40;
   --color-main-brown: #6C5D53;
+  --color-main-dark-brown: #4E3422;
   --color-edu-title: #702AC8;
   --color-edu-period: #BD5D38;
   --color-edu-result: #0277BD;
@@ -58,6 +59,7 @@
   --color-projectcard-keypoints: #655D54;
   --color-projectcard-chevronright: #C4B8AA;
   --color-projectcard-chevronright-hover: #6F6257;
+  --color-404page-text: #6C5D53;
   
   --color-sub-black: #495057;
   --color-sub-gray: #868E96;
@@ -75,12 +77,18 @@
   --color-projectfilter-button-bg: #F2EBE1;
   --color-projectfilter-button-accent: #8A7257;
   --color-projectcard-keypoints-bg: #F7F4EF;
+  --color-projectdetail-hero-hover: #5D656D;
+  --color-projectdetail-preview-bg: #FFFDF9;
+  --color-projectdetail-preview-icon: #8A7A6A;
+  --color-404page-backbutton-hover-bg: #495057;
+
 
   /* 컬러 - 선 */
   --color-projectfilter-border: #D2C2AF;
   --color-projectfilter-button-border: #CDBCA8;
   --color-projectcard-border: #E8E5DF;
   --color-projectcard-keypoints-border: #ECE6DD;
+  --color-projectdetail-preview-border: #D8CEC1;
 
   /* 애니메이션 효과 */
   --animate-loading-wave: loading-wave 2.5s ease-in-out infinite;
