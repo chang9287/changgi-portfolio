@@ -49,6 +49,8 @@
   --color-edu-title: #702AC8;
   --color-edu-period: #BD5D38;
   --color-edu-result: #0277BD;
+  --color-profile-description: #777;
+  --color-profile-info-title: #999;
   --color-profile-text-hover: #88593A;
   --color-project-empty: #9b9288;
   --color-projectfilter-title: #4F4337;
@@ -73,6 +75,9 @@
   --color-icon-github-hover-bg: #F3F3F3;
   --color-icon-kakao-hover: #391B1B;
   --color-icon-kakao-hover-bg: #FAE300;
+  --color-profile-info-border: #EEE8E1;
+  --color-profile-info-bg: #F9F7F4;
+  --color-profile-keywords-bg: #F5F1EC;
   --color-projectfilter-bg: #DCD7D0;
   --color-projectfilter-button-bg: #F2EBE1;
   --color-projectfilter-button-accent: #8A7257;
