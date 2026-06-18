@@ -3,6 +3,7 @@ import { englishVillageImages } from "./images";
 
 const data: ProjectData = {
   id: "english-village",
+  order: 2,
   title: "인천영어마을 리뉴얼 프로젝트",
   summary: "직관적이지 않은 UI와 정보 전달 방식을 개선하고, 주요 사용자층을 고려한 구조로 재설계한 리뉴얼 프로젝트입니다.",
   thumbnail: englishVillageImages.thumbnail,
@@ -19,26 +20,32 @@ const data: ProjectData = {
   github: "https://github.com/chang9287/English-Village",
   previews: [
     {
+      id: "main-page",
       title: "메인 페이지",
       image: englishVillageImages.mainPage,
     },
     {
+      id: "about-page",
       title: "마을 소개 페이지",
       image: englishVillageImages.aboutPage,
     },
     {
+      id: "map-page",
       title: "오시는 길 페이지",
       image: englishVillageImages.mapPage,
     },
     {
+      id: "test-page",
       title: "학습 테스트 페이지",
       image: englishVillageImages.testPage,
     },
     {
+      id: "program-page",
       title: "프로그램 신청 페이지",
       image: englishVillageImages.programPage,
     },
     {
+      id: "reservation-page",
       title: "프로그램 예약 페이지",
       image: englishVillageImages.reservationPage,
     }

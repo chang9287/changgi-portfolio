@@ -1,4 +1,4 @@
-import MyFace from "../../assets/images/my-face.png"
+import MyFace from "../../assets/images/my-face.png";
 
 /* 타입 설정 */
 type ProfileInfo = {
