@@ -15,6 +15,26 @@
 /* Tailwind CSS */
 @import "tailwindcss";
 
+/* 커스텀 애니메이션 효과 */
+@keyframes loading-wave {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  20% {
+    transform: translateY(-12px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+}
+
 /* Theme */
 @theme {
   /* 폰트 */
@@ -26,19 +46,62 @@
   --color-main-black: #343A40;
   --color-main-brown: #6C5D53;
   --color-header-active: #A18A7B;
+  --color-main-dark-brown: #4E3422;
   --color-edu-title: #702AC8;
   --color-edu-period: #BD5D38;
   --color-edu-result: #0277BD;
+  --color-profile-description: #777;
+  --color-profile-info-title: #999;
   --color-profile-text-hover: #88593A;
+  --color-project-empty: #9b9288;
+  --color-projectfilter-title: #4F4337;
+  --color-projectfilter-subtitle: #6B5B4A;
+  --color-projectfilter-button-text: #6B5B4A;
+  --color-projectcard-type: #8A7D6F;
+  --color-projectcard-summary: #5D5953;
+  --color-projectcard-keypoints: #655D54;
+  --color-projectcard-chevronright: #C4B8AA;
+  --color-projectcard-chevronright-hover: #6F6257;
+  --color-404page-text: #6C5D53;
+  
+  --color-sub-black: #495057;
+  --color-sub-gray: #868E96;
 
   /* 컬러 - 배경, 아이콘 */
-  --color-home-bg: #F7F2EB;
+  --color-main-bg: #F7F6F3;
   --color-icon-mail-hover-bg: #1FBAFF;
   --color-icon-call-hover-bg: #57D957;
   --color-icon-github-hover: #181717;
   --color-icon-github-hover-bg: #F3F3F3;
   --color-icon-kakao-hover: #391B1B;
   --color-icon-kakao-hover-bg: #FAE300;
+  --color-profile-info-border: #EEE8E1;
+  --color-profile-info-bg: #F9F7F4;
+  --color-profile-keywords-bg: #F5F1EC;
+  --color-projectfilter-bg: #DCD7D0;
+  --color-projectfilter-button-bg: #F2EBE1;
+  --color-projectfilter-button-accent: #8A7257;
+  --color-projectcard-keypoints-bg: #F7F4EF;
+  --color-projectdetail-hero-hover: #5D656D;
+  --color-projectdetail-preview-bg: #FFFDF9;
+  --color-projectdetail-preview-icon: #8A7A6A;
+  --color-404page-backbutton-hover-bg: #495057;
+
+
+  /* 컬러 - 선 */
+  --color-projectfilter-border: #D2C2AF;
+  --color-projectfilter-button-border: #CDBCA8;
+  --color-projectcard-border: #E8E5DF;
+  --color-projectcard-keypoints-border: #ECE6DD;
+  --color-projectdetail-preview-border: #D8CEC1;
+
+  /* 애니메이션 효과 */
+  --animate-loading-wave: loading-wave 2.5s ease-in-out infinite;
+  --color-skills-category: #A78B71;
+  --color-skills-active-category: #4E3422;
+  --color-contact-form-border: #DCD7CF;
+  --color-contact-form-input: #ddd;
+  --color-contact-button-hover: #525C66;
 }
 
 body {

@@ -3,6 +3,7 @@ import { publicRenewalImages } from "./images";
 
 const data: ProjectData = {
   id: "public-renewal",
+  order: 1,
   title: "공공기관 홈페이지 리뉴얼",
   summary: "정보 구조 재정리와 콘텐츠 우선순위 개선을 통해 사용자가 필요한 정보를 빠르게 탐색할 수 있도록 구성한 웹사이트 리메이크 프로젝트입니다.",
   thumbnail: publicRenewalImages.thumbnail,
@@ -19,14 +20,17 @@ const data: ProjectData = {
   github: "https://github.com/chang9287/public-renewal",
   previews: [
     {
+      id: "main-page",
       title: "메인 페이지",
       image: publicRenewalImages.mainPage,
     },
     {
+      id: "notice-page",
       title: "공지사항 페이지",
       image: publicRenewalImages.noticePage,
     },
     {
+      id: "faq-page",
       title: "FAQ 페이지",
       image: publicRenewalImages.faqPage,
     }
