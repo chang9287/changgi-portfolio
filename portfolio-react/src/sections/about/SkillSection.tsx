@@ -28,7 +28,7 @@ export default function SkillSection() {
       <div className="mt-8 mx-4 flex flex-col gap-10">
         {/* categories 메뉴 */}
         <div className="w-full px-6">
-          <ul className="bg-home-bg py-1 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-4 w-full justify-items-center rounded-2xl">
+          <ul className="bg-main-bg py-1 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-4 w-full justify-items-center rounded-2xl">
           {categories.map((category) => (
             <li key={category} className="py-2">
               <button
