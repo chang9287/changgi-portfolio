@@ -4,7 +4,7 @@ export default function SummarySection() {
   return (
     <section>
       <SectionTitle title={"summary"} />
-      <div className="px-10 mt-8 text-main-black text-xl space-y-4">
+      <div className="px-6 sm:px-10 mt-6 sm:mt-8 text-main-black text-base sm:text-lg lg:text-xl space-y-3 sm:space-y-4">
         <p>
           처음에는 화면이 바로 보이는 점이 흥미로워 프론트엔드를 시작했습니다.<br />
           하지만 프로젝트를 진행하며 기능이 있어도 사용자가 쉽게 찾지 못하는 경험을 하게 되었고,
