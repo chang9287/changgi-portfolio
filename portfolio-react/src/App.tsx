@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Toaster } from 'react-hot-toast'
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
-import { Home, About, Projects, Contact } from './pages'
+import { Home, About, Projects, ProjectDetail, Contact } from './pages'
 import Preloader from './components/ui/Preloader'
 import './App.css'
 
@@ -29,6 +29,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/projects/:id' element={<ProjectDetail />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />

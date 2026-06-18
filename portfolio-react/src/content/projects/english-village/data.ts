@@ -3,6 +3,7 @@ import { englishVillageImages } from "./images";
 
 const data: ProjectData = {
   id: "english-village",
+  order: 2,
   title: "인천영어마을 리뉴얼 프로젝트",
   summary: "직관적이지 않은 UI와 정보 전달 방식을 개선하고, 주요 사용자층을 고려한 구조로 재설계한 리뉴얼 프로젝트입니다.",
   thumbnail: englishVillageImages.thumbnail,

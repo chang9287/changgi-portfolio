@@ -1,3 +1,5 @@
+import type { Skill } from "@/data/skillColors";
+
 /* 타입 정의 */
 type Preview = {
   title: string;
@@ -6,14 +8,15 @@ type Preview = {
 
 export type ProjectData = {
   id: string;
+  order: number;
   title: string;
   summary: string;
   thumbnail: string;
   keyPoints: string[];
-  skills: string[];
+  skills: Skill[];
   period: string;
   role: string;
-  type: "personal" | "team";
+  type: "personal" | "team" | null;
   demo?: string;
   github?: string;
   previews: Preview[];
