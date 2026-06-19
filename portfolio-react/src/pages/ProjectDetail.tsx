@@ -18,11 +18,11 @@ export default function ProjectDetail() {
   }
   
   return (
-    <main className="py-12 sm:py-16 px-4 bg-home-bg">
+    <main className="py-12 sm:py-16 px-4 bg-main-bg">
       <div className="max-w-6xl w-full mx-auto flex flex-col">
         <Link 
           to={'/projects'} 
-          className="inline-flex items-center gap-2 text-[#778088] hover:text-main-black transition-all duration-300 text-xs sm:text-base"
+          className="inline-flex items-center gap-2 text-projectdetail-go-back hover:text-main-black transition-all duration-300 text-xs sm:text-base"
         >
           <MoveLeft size={16} />
           <span>Back to Projects</span>

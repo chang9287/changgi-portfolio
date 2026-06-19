@@ -36,11 +36,9 @@ export default function ProjectFilter({
 
   /* flat 메서드로 skills들 모으기 */
   const flattedSkills = projects.map(p => p.skills).flat();
-  console.log(flattedSkills);
 
   /* set 메서드로 중복제거 및 새 배열에 담기 */
   const skillList = [...new Set(flattedSkills)];
-  console.log(skillList);
 
   return (
     <div className="flex flex-col gap-3">
@@ -80,8 +78,8 @@ export default function ProjectFilter({
                     className={`
                       ${commonButtonStyle}
                       ${isSelected
-                        ? "bg-projectfilter-button-accent text-white  border-projectfilter-button-accent"
-                        : "bg-projectfilter-button-bg   text-projectfilter-button-text border   border-projectfilter-button-border"
+                        ? "bg-projectfilter-button-accent text-white border-projectfilter-button-accent"
+                        : "bg-projectfilter-button-bg text-projectfilter-button-text border border-projectfilter-button-border"
                       }
                     `}
                   >
@@ -93,7 +91,9 @@ export default function ProjectFilter({
           </div>
         </div>
       </div>
-      <p className="text-project-empty">프로젝트를 클릭하면 더욱 자세히 볼 수 있습니다.</p>
+      <p className="text-project-empty">
+        프로젝트를 클릭하면 더욱 자세히 볼 수 있습니다.
+      </p>
     </div>
   );
 }

@@ -14,12 +14,11 @@ export default function EducationSection() {
         />
         <EducationCard
           eduTitle={"고용노동부 국비지원"}      
-          eduDetail={"프론트엔드 개발자(자바 스크립트, 리액트) 실무   양성과정 A "}      
+          eduDetail={"프론트엔드 개발자(자바 스크립트, 리액트) 실무 양성과정 A"}
           eduPeriod={"2024.07.30 ~ 2025.01.27"}      
           eduResult={"수료"}      
         />
       </div>
-      
     </section>
   );
 }

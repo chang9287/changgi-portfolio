@@ -9,7 +9,7 @@ const GRID_BACKGROUND = `
 export default function Home() {
   return (
     <main className="min-h-[calc(100vh-64px-64px)] flex flex-col">
-      <div className={`bg-home-bg w-full ${GRID_BACKGROUND}`}>
+      <div className={`bg-main-bg w-full ${GRID_BACKGROUND}`}>
         <div className="max-w-6xl w-full mx-auto">
           <HeroSection />
         </div>

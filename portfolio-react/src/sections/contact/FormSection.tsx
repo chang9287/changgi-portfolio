@@ -52,19 +52,18 @@ export default function FormSection() {
     })
     .catch((err) => {
       // 실패했을 때
-
       toast.dismiss(loading);
       toast.error("메일 전송 실패")
 
-      console.log(err);
+      console.error(err);
     })
   }
 
   /* common style */
   const commonInputStyle = "border border-contact-form-input px-4 py-3 rounded-xl outline-none placeholder:font-main"
   const commonRadioStyle = "cursor-pointer flex-1 text-center py-3 rounded-xl border transition-all duration-200"
-  const commonRadioPrev = "bg-main-black text-white border-main-black"
-  const commonRadioChecked = "bg-white text-[#9CA3AF] border-contact-form-input hover:border-main-black"
+  const commonRadioChecked = "bg-main-black text-white border-main-black"
+  const commonRadioUnchecked = "bg-white text-contact-radio-checked border-contact-form-input hover:border-main-black"
 
   return (
     <section>
@@ -94,13 +93,13 @@ export default function FormSection() {
           {/* 채용 문의 or 협업 문의 */}
           <div className='flex gap-4'>
             <label 
-              className={`${commonRadioStyle} ${subjectType === "채용 문의" ? `${commonRadioPrev}` : `${commonRadioChecked}`}`}
+              className={`${commonRadioStyle} ${subjectType === "채용 문의" ? `${commonRadioChecked}` : `${commonRadioUnchecked}`}`}
             >
               <input 
                 type='radio'
                 name='subject'
                 value="채용 문의"
-                className="sr-only" // sr-only : 화면에는 안 보이지만, 스크린리더(접근성)는 읽을 수 있게 하는 클래스
+                className="sr-only"
                 checked={subjectType === "채용 문의"}
                 onChange={(e) => setSubjectType(e.target.value)}
                 required
@@ -108,7 +107,7 @@ export default function FormSection() {
               채용 문의
             </label>
             <label 
-              className={`${commonRadioStyle} ${subjectType === "협업 문의" ? `${commonRadioPrev}` : `${commonRadioChecked}`}`}
+              className={`${commonRadioStyle} ${subjectType === "협업 문의" ? `${commonRadioChecked}` : `${commonRadioUnchecked}`}`}
             >
               <input 
                 type='radio'

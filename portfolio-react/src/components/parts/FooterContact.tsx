@@ -77,13 +77,11 @@ export default function FooterContact({ className }: FooterContactProps ) {
           </li>
         ))}
       </ul>
-
+      
       {/* Kakao-Modal */}
       {isOpen && (
         <KakaoModal onClose={() => setIsOpen(false)} />
       )}
-
     </>
-    
   );
 }

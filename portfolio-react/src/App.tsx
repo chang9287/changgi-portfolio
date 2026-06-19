@@ -38,15 +38,15 @@ function App() {
             linkTo={"/projects"} 
             buttonText={"Projects"} />
           } 
-         />
-         <Route 
-            path='*' 
-            element={<NotFound 
-              targetName={"페이지"} 
-              linkTo={"/"} 
-              buttonText={"Home"} />
-            } 
-          />
+        />
+        <Route 
+          path='*' 
+          element={<NotFound 
+            targetName={"페이지"} 
+            linkTo={"/"} 
+            buttonText={"Home"} />
+          } 
+        />
       </Routes>
      </>
   )
