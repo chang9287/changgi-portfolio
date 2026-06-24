@@ -1,19 +1,19 @@
-import { Routes, Route } from 'react-router-dom'
-import { useState } from 'react'
-import { Toaster } from 'react-hot-toast'
-import MainLayout from './layouts/MainLayout'
-import { Home, About, Projects, ProjectDetail, Contact, NotFound } from './pages'
-import Preloader from './components/ui/Preloader'
-import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import { Toaster } from 'react-hot-toast';
+import MainLayout from './layouts/MainLayout';
+import { Home, About, Projects, ProjectDetail, Contact, NotFound } from './pages';
+import Preloader from './components/ui/Preloader';
+import './App.css';
 
 
 function App() {
   const [isLoading, setIsLoading] = useState(() => {
-    return sessionStorage.getItem("visited") ? false : true
+    return !sessionStorage.getItem("visited")
   });
 
   if(isLoading) {
-    return <Preloader finishLoading = {() => {
+    return <Preloader finishLoading={() => {
       sessionStorage.setItem("visited", "true");
       setIsLoading(false);
     }}/>
@@ -25,11 +25,11 @@ function App() {
 
       <Routes>
         <Route element={<MainLayout />}>
-         <Route path='/' element={<Home />} />
-         <Route path='/about' element={<About />} />
-         <Route path='/projects' element={<Projects />} />
-         <Route path='/projects/:id' element={<ProjectDetail />} />
-         <Route path='/contact' element={<Contact />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/projects/:id' element={<ProjectDetail />} />
+          <Route path='/contact' element={<Contact />} />
         </Route>
         <Route 
           path='/projects/not-found' 
@@ -48,7 +48,7 @@ function App() {
           } 
         />
       </Routes>
-     </>
+    </>
   )
 }
 

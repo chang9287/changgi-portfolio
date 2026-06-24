@@ -23,7 +23,7 @@ const optionList: Option[] = [
   { label: "반응형", responsive: true }
 ]
 
-const commonButtonStyle = "border cursor-pointer px-3 py-2 text-sm rounded-3xl transition-all duration-300 hover:border-projectfilter-button-accent"
+const commonButtonStyle = "border cursor-pointer px-3 py-2 text-sm rounded-3xl transition-all duration-100 hover:border-projectfilter-button-accent"
 
 export default function ProjectFilter({
   projects, 

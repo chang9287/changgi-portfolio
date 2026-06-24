@@ -41,14 +41,13 @@ export default function InfoSection() {
           {contactList.map((list) => (
             <li 
               key={list.title} 
-              className="bg-white border border-contact-form-border p-5 rounded-xl flex
-              flex-col gap-1.5"
+              className="bg-white border dark:bg-contact-section-dark-bg border-contact-form-border p-5 rounded-xl flex flex-col gap-1.5"
             >
               <span className="text-sm text-sub-gray">{list.title}</span>
               <div className="flex items-center justify-between">
                 <a 
                   href={list.href}
-                  className="self-start font-bold text-main-black  hover:text-sub-gray hover:translate-x-1 transition duration-200"
+                  className="self-start font-bold text-main-black hover:text-sub-gray hover:translate-x-1 transition duration-200"
                   target={list.isExternal ? "_blank" : undefined}
                   rel={list.isExternal ? "noopener noreferrer" : undefined}
                 >

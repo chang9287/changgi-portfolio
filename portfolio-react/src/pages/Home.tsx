@@ -3,6 +3,7 @@ import HomeNav from "../components/parts/HomeNav";
 
 const GRID_BACKGROUND = `
   [background-image:linear-gradient(rgba(108,93,83,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(108,93,83,0.06)_1px,transparent_1px)]
+  dark:[background-image:linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)]
   [background-size:60px_60px]
 `;
 

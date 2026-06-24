@@ -5,7 +5,7 @@ import SkillSection from "../sections/about/SkillSection";
 
 export default function About() {
   return (
-    <main className="py-16 px-4">
+    <main className="py-16 px-4 bg-main-bg">
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-20">
         <ProfileSection />
         <SummarySection />

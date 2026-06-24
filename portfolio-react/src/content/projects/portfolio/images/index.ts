@@ -1,13 +1,29 @@
 import thumbnail from "./thumbnail.png";
-import mainPage from "./main-page.png";
+import homePage from "./home-page.png";
+import aboutPage from "./about-page.png";
+import projectsPage from "./projects-page.png";
+import projectDetailPage from "./project-detail-page.png";
+import contactPage from "./contact-page.png";
+import notFoundPage from "./not-found-page.png";
+
 
 
 type MyPortfolioImages = {
   thumbnail: string;
-  mainPage: string;
+  homePage: string;
+  aboutPage: string;
+  projectsPage: string;
+  projectDetailPage: string;
+  contactPage: string;
+  notFoundPage: string;
 }
 
 export const myPortfolioImages: MyPortfolioImages = {
   thumbnail,
-  mainPage
+  homePage,
+  aboutPage,
+  projectsPage,
+  projectDetailPage,
+  contactPage,
+  notFoundPage
 };

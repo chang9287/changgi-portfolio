@@ -26,7 +26,7 @@ export default function FormSection() {
     const loading = toast.loading("메일 전송 중...");
 
     emailjs.send(
-      "service_portfolio", // sevice_id
+      "service_portfolio", // service_id
       "template_ghq4i9s", // template_id
       {
         from_name: form.name,
@@ -61,13 +61,13 @@ export default function FormSection() {
 
   /* common style */
   const commonInputStyle = "border border-contact-form-input px-4 py-3 rounded-xl outline-none placeholder:font-main"
-  const commonRadioStyle = "cursor-pointer flex-1 text-center py-3 rounded-xl border transition-all duration-200"
+  const commonRadioStyle = "cursor-pointer flex-1 text-center py-3 rounded-xl border transition-all duration-200 dark:bg-contact-section-dark-bg"
   const commonRadioChecked = "bg-main-black text-white border-main-black"
   const commonRadioUnchecked = "bg-white text-contact-radio-checked border-contact-form-input hover:border-main-black"
 
   return (
     <section>
-      <div className='border border-contact-form-border bg-white p-8 rounded-2xl'>
+      <div className='border border-contact-form-border bg-white dark:bg-contact-section-dark-bg p-8 rounded-2xl'>
         <h1 className='text-6xl font-bold font-title mb-6'>Contact Me</h1>
         <form onSubmit={sendEmail} className='flex flex-col gap-4 text-sm'>
           {/* 이름이나 기업 */}
@@ -134,7 +134,7 @@ export default function FormSection() {
           {/* 보내기 버튼 */}
           <button 
             type='submit' 
-            className='py-3 border rounded-4xl cursor-pointer text-white font-bold bg-main-black hover:bg-contact-button-hover transition duration-200'
+            className='py-3 border dark:border-contact-button-bg rounded-4xl cursor-pointer text-white font-bold bg-contact-button-bg hover:bg-contact-button-hover transition duration-200'
           >
             Send Email
           </button>

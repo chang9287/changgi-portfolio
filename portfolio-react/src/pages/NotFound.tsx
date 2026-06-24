@@ -18,7 +18,7 @@ export default function NotFound({ targetName, linkTo, buttonText }: NotFoundPro
           잘못된 주소로 접근했을 수 있습니다.
         </p>
         <div className='mt-5'>
-          <Link to={linkTo} className='inline-flex items-center gap-2 px-5 py-3 border rounded-3xl bg-main-black text-white font-semibold transition-all duration-300 hover:bg-404page-backbutton-hover-bg'>
+          <Link to={linkTo} className='inline-flex items-center gap-2 px-5 py-3 border dark:border-404page-backbutton rounded-3xl bg-404page-backbutton text-white font-semibold transition-all duration-300 hover:bg-404page-backbutton-hover-bg dark:hover:border-404page-backbutton-hover-bg'>
             <MoveLeft size={16} />
             <span>Back to {buttonText}</span>
           </Link>
