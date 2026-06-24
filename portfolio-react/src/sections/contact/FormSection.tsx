@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { toast } from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
 
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 export default function FormSection() {
   const [form, setForm] = useState({
     name: "",
@@ -26,8 +30,8 @@ export default function FormSection() {
     const loading = toast.loading("메일 전송 중...");
 
     emailjs.send(
-      "service_portfolio", // service_id
-      "template_ghq4i9s", // template_id
+      SERVICE_ID,
+      TEMPLATE_ID,
       {
         from_name: form.name,
         email: form.email,
@@ -35,7 +39,7 @@ export default function FormSection() {
         message: form.message,
         date: new Date().toLocaleString()
       }, // 보내는 데이터
-      "OVSf2gYJfGV0Sh8OA", // public_key
+      PUBLIC_KEY
     )
     .then(() => {
       // 성공했을 때
@@ -53,17 +57,17 @@ export default function FormSection() {
     .catch((err) => {
       // 실패했을 때
       toast.dismiss(loading);
-      toast.error("메일 전송 실패")
+      toast.error("메일 전송 실패");
 
       console.error(err);
     })
-  }
+  };
 
   /* common style */
-  const commonInputStyle = "border border-contact-form-input px-4 py-3 rounded-xl outline-none placeholder:font-main"
-  const commonRadioStyle = "cursor-pointer flex-1 text-center py-3 rounded-xl border transition-all duration-200 dark:bg-contact-section-dark-bg"
-  const commonRadioChecked = "bg-main-black text-white border-main-black"
-  const commonRadioUnchecked = "bg-white text-contact-radio-checked border-contact-form-input hover:border-main-black"
+  const commonInputStyle = "border border-contact-form-input px-4 py-3 rounded-xl outline-none placeholder:font-main";
+  const commonRadioStyle = "cursor-pointer flex-1 text-center py-3 rounded-xl border transition-all duration-200 dark:bg-contact-section-dark-bg";
+  const commonRadioChecked = "bg-main-black text-white border-main-black";
+  const commonRadioUnchecked = "bg-white text-contact-radio-checked border-contact-form-input hover:border-main-black";
 
   return (
     <section>
