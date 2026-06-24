@@ -7,7 +7,7 @@ type ProjectMarkdownSectionProps = {
 
 export default function ProjectMarkdownSection({ content }: ProjectMarkdownSectionProps) {
 
-  const matteredContnet = content.replace(/^---[\s\S]*?---/, "").trim();
+  const matteredContent = content.replace(/^---[\s\S]*?---/, "").trim();
 
   return (
     <section className="mb-12 sm:mb-24">
@@ -47,7 +47,7 @@ export default function ProjectMarkdownSection({ content }: ProjectMarkdownSecti
           </li>
         )
       }}>
-        {matteredContnet}
+        {matteredContent}
       </Markdown>
     </section>
   );

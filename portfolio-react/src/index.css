@@ -14,6 +14,8 @@
 
 /* Tailwind CSS */
 @import "tailwindcss";
+/* 다크모드 클래스(.dark) 활성화 */
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* 커스텀 애니메이션 효과 */
 @keyframes loading-wave {
@@ -35,6 +37,15 @@
   }
 }
 
+@keyframes mode-float {
+  0%,100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
 /* Theme */
 @theme {
   /* 폰트 */
@@ -42,69 +53,176 @@
   --font-hero: "Pretendard", sans-serif;
   --font-title: "Saira Extra Condensed", sans-serif;
 
-  /* 컬러 - 폰트 */
+  /* 컬러 */
+  /* Common */
   --color-main-black: #343A40;
   --color-main-brown: #6C5D53;
-  --color-header-active: #A18A7B;
   --color-main-dark-brown: #4E3422;
-  --color-edu-title: #702AC8;
-  --color-edu-period: #BD5D38;
-  --color-edu-result: #0277BD;
-  --color-profile-description: #777;
-  --color-profile-info-title: #999;
-  --color-profile-text-hover: #88593A;
-  --color-project-empty: #9b9288;
-  --color-projectfilter-title: #4F4337;
-  --color-projectfilter-subtitle: #6B5B4A;
-  --color-projectfilter-button-text: #6B5B4A;
-  --color-projectcard-type: #8A7D6F;
-  --color-projectcard-summary: #5D5953;
-  --color-projectcard-keypoints: #655D54;
-  --color-projectcard-chevronright: #C4B8AA;
-  --color-projectcard-chevronright-hover: #6F6257;
-  --color-404page-text: #6C5D53;
-  
   --color-sub-black: #495057;
   --color-sub-gray: #868E96;
-
-  /* 컬러 - 배경, 아이콘 */
   --color-main-bg: #F7F6F3;
+  --color-common-bg: #171B21;
+
+  /* Header */
+  --color-header-active: #A18A7B;
+
+  /* Footer */
+  --color-icon-main-color: #343A40;
   --color-icon-mail-hover-bg: #1FBAFF;
   --color-icon-call-hover-bg: #57D957;
   --color-icon-github-hover: #181717;
   --color-icon-github-hover-bg: #F3F3F3;
   --color-icon-kakao-hover: #391B1B;
   --color-icon-kakao-hover-bg: #FAE300;
+  --color-icon-bg: #1F242B;
+
+  /* About */
+  --color-profile-description: #777;
+  --color-profile-info-title: #999;
+  --color-profile-text-hover: #88593A;
   --color-profile-info-border: #EEE8E1;
-  --color-profile-info-bg: #F9F7F4;
+  --color-profile-info-bg: #F5F3F0;
   --color-profile-keywords-bg: #F5F1EC;
+  --color-edu-title: #702AC8;
+  --color-edu-period: #BD5D38;
+  --color-edu-result: #0277BD;
+  --color-skills-category: #A78B71;
+  --color-skills-active-category: #4E3422;
+
+  /* Projects */
+  --color-project-empty: #9B9288;
+  --color-projectfilter-title: #4F4337;
+  --color-projectfilter-subtitle: #6B5B4A;
+  --color-projectfilter-button-text: #6B5B4A;
   --color-projectfilter-bg: #DCD7D0;
   --color-projectfilter-button-bg: #F2EBE1;
   --color-projectfilter-button-accent: #8A7257;
-  --color-projectcard-keypoints-bg: #F7F4EF;
-  --color-projectdetail-hero-hover: #5D656D;
-  --color-projectdetail-preview-bg: #FFFDF9;
-  --color-projectdetail-preview-icon: #8A7A6A;
-  --color-404page-backbutton-hover-bg: #495057;
-
-
-  /* 컬러 - 선 */
   --color-projectfilter-border: #D2C2AF;
   --color-projectfilter-button-border: #CDBCA8;
+  --color-projectcard-type: #8A7D6F;
+  --color-projectcard-summary: #5D5953;
+  --color-projectcard-keypoints: #655D54;
+  --color-projectcard-chevronright: #C4B8AA;
+  --color-projectcard-chevronright-hover: #6F6257;
+  --color-projectcard-keypoints-bg: #F7F4EF;
   --color-projectcard-border: #E8E5DF;
   --color-projectcard-keypoints-border: #ECE6DD;
+  --color-projectcard-bg: #2E3640;
+
+  /* ProjectDetail */
+  --color-projectdetail-go-back: #778088;
+  --color-projectdetail-hero-hover: #5D656D;
+  --color-projectdetail-hero-hover-border: #5D656D;
+  --color-projectdetail-preview-bg: #FFFDF9;
+  --color-projectdetail-preview-icon: #8A7A6A;
   --color-projectdetail-preview-border: #D8CEC1;
+  --color-projectdetail-hero-demo: #343A40;
+  --color-projectdetail-hero-demo-border: #343A40;
+
+  /* Contact */
+  --color-contact-radio-checked: #9CA3AF;
+  --color-contact-button-bg: #343A40;
+  --color-contact-button-hover: #525C66;
+  --color-contact-form-border: #DCD7CF;
+  --color-contact-form-input: #ddd;
+  --color-contact-section-dark-bg: #2E3640;
+
+  /* NotFound */
+  --color-404page-text: #6C5D53;
+  --color-404page-backbutton: #343A40;
+  --color-404page-backbutton-hover-bg: #495057;
 
   /* 애니메이션 효과 */
   --animate-loading-wave: loading-wave 2.5s ease-in-out infinite;
-  --color-skills-category: #A78B71;
-  --color-skills-active-category: #4E3422;
-  --color-contact-form-border: #DCD7CF;
-  --color-contact-form-input: #ddd;
-  --color-contact-button-hover: #525C66;
+  --animate-mode-float: mode-float 1s ease-in-out infinite;
+
+  /* Dark모드 */
+  --color-dark-moon-bg: #505866;
+  --color-dark-moon-border: #687180;
+  --color-dark-sun-bg: #FFFDF8;
+  --color-dark-sun-border: #FFFDF8;
 }
 
+.dark {
+  /* Common */
+  --color-main-black: #EDEFF2;
+  --color-main-brown: #D6BFA8;
+  --color-main-dark-brown: #E0B98F;
+  --color-sub-black: #C9D0D8;
+  --color-sub-gray: #96A0AA;
+  --color-main-bg: #20252D;
+
+  /* Header */
+  --color-header-active: #E0B98F;
+
+  /* About */
+  --color-profile-description: #AEB7C2;
+  --color-profile-info-title: hsl(213, 10%, 58%);
+  --color-profile-text-hover: #F0C08F;
+  --color-profile-info-border: #46505C;
+  --color-profile-info-bg: #2B323C;
+  --color-profile-keywords-bg: #35323A;
+  --color-edu-title: #B388FF;
+  --color-edu-period: #D88A62;
+  --color-edu-result: #4FB6FF;
+  --color-skills-category: #EDEFF2;
+  --color-skills-active-category: #F0D8C0;
+
+  /* Projects */
+  --color-project-empty: #9DA6B0;
+  --color-projectfilter-title: #F0E2D2;
+  --color-projectfilter-subtitle: #BFAE9C;
+  --color-projectfilter-button-text: #E0CDBA;
+  --color-projectfilter-bg: #2A313A;
+  --color-projectfilter-button-bg: #3A414B;
+  --color-projectfilter-button-accent: #D3A979;
+  --color-projectfilter-border: #505A66;
+  --color-projectfilter-button-border: #5C6672;
+
+  --color-projectcard-type: #C1B09D;
+  --color-projectcard-summary: #D4DAE0;
+  --color-projectcard-keypoints: #C2CAD2;
+  --color-projectcard-chevronright: #8E8174;
+  --color-projectcard-chevronright-hover: #F0C08F;
+  --color-projectcard-keypoints-bg: #38414D;
+  --color-projectcard-border: #48515D;
+  --color-projectcard-keypoints-border: #4F5965;
+
+  /* ProjectDetail */
+  --color-projectdetail-go-back: #B5BEC8;
+  --color-projectdetail-hero-demo: #20252D;
+  --color-projectdetail-hero-demo-border: #5D656D;
+  --color-projectdetail-hero-hover: #252B34;
+  --color-projectdetail-hero-hover-border: #A5AFB8;
+  --color-projectdetail-preview-bg: #2B323C;
+  --color-projectdetail-preview-icon: #D6BFA8;
+  --color-projectdetail-preview-border: #4D5763;
+
+  /* Contact */
+  --color-contact-radio-checked: #9CA3AF;
+  --color-contact-button-bg: #4B5563;
+  --color-contact-button-hover: #5B6572;
+  --color-contact-form-border: #4D5763;
+  --color-contact-form-input: #5B6572;
+
+  /* NotFound */
+  --color-404page-text: #D6BFA8;
+  --color-404page-backbutton: #171B21;
+  --color-404page-backbutton-hover-bg: #313843;
+}
+
+/* 전체 텍스트색 및 폰트 */
 body {
   font-family: var(--font-main);
   color: var(--color-main-black);
+}
+
+/* 다크모드 전체 배경색 */
+.dark body {
+  background-color: #171B21;
+}
+
+/* projectdetail-preview에서의 다크모드 스크롤 색 */
+.dark .preview-scroll {
+  scrollbar-color: #556170 #252B34;
 }

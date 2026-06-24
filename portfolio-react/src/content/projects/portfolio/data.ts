@@ -20,9 +20,34 @@ const data: ProjectData = {
   github: "https://github.com/chang9287/changgi-portfolio",
   previews: [
     {
-      id: "main-page",
-      title: "메인 페이지",
-      image: myPortfolioImages.mainPage,
+      id: "home-page",
+      title: "Home 페이지",
+      image: myPortfolioImages.homePage,
+    },
+    {
+      id: "about-page",
+      title: "About 페이지",
+      image: myPortfolioImages.aboutPage,
+    },
+    {
+      id: "projects-page",
+      title: "Projects 페이지",
+      image: myPortfolioImages.projectsPage,
+    },
+    {
+      id: "project-detail-page",
+      title: "Project-Detail 페이지",
+      image: myPortfolioImages.projectDetailPage,
+    },
+    {
+      id: "contact-page",
+      title: "Contact 페이지",
+      image: myPortfolioImages.contactPage,
+    },
+    {
+      id: "not-found-page",
+      title: "Not-Found 페이지",
+      image: myPortfolioImages.notFoundPage,
     }
   ],
   responsive: true

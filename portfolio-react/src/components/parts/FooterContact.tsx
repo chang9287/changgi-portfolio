@@ -3,7 +3,7 @@ import KakaoModal from "../ui/KakaoModal";
 
 type FooterContactProps = {
   className?: string;
-}
+};
 type iconStylesType = {
   icon: string;
   href?: string;
@@ -12,11 +12,11 @@ type iconStylesType = {
   iClass: string;
   isExternal?: boolean;
   onClick?: () => void;
-}
+};
 
 export default function FooterContact({ className }: FooterContactProps ) {
   /* Common Style */
-  const commonIconStyle = "border w-12 h-12 rounded-full flex justify-center items-center cursor-pointer transition duration-200";
+  const commonIconStyle = "border dark:border-icon-bg w-12 h-12 rounded-full flex justify-center items-center cursor-pointer bg-white dark:bg-icon-bg";
   
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,31 +24,31 @@ export default function FooterContact({ className }: FooterContactProps ) {
     {
       icon: "xi-mail",
       href: "mailto:ckdrl9287@gmail.com",
-      liClass: "bg-white group hover:bg-icon-mail-hover-bg hover:border-icon-mail-hover-bg",
+      liClass: "group hover:bg-icon-mail-hover-bg hover:border-icon-mail-hover-bg",
       aClass: "w-full h-full flex items-center justify-center",
-      iClass: "text-2xl group-hover:text-white transition duration-200",
+      iClass: "dark:text-main-black text-icon-main-color text-2xl group-hover:text-white",
     },
     {
       icon: "xi-call",
       href: "tel:01088809287",
-      liClass: "bg-white group hover:bg-icon-call-hover-bg hover:border-icon-call-hover-bg",
+      liClass: "group hover:bg-icon-call-hover-bg hover:border-icon-call-hover-bg",
       aClass: "w-full h-full flex items-center justify-center",
-      iClass: "text-2xl group-hover:text-white transition duration-200",
+      iClass: "dark:text-main-black text-icon-main-color text-2xl group-hover:text-white",
     },
     {
       icon: "xi-github",
       href: "https://github.com/chang9287",
-      liClass: "bg-white group hover:bg-icon-github-hover-bg hover:border-icon-github-hover-bg",
+      liClass: "group hover:bg-icon-github-hover-bg hover:border-icon-github-hover-bg",
       aClass: "w-full h-full flex items-center justify-center",
-      iClass: "text-2xl group-hover:text-icon-github-hover transition duration-200",
+      iClass: "dark:text-main-black text-icon-main-color text-2xl group-hover:text-icon-github-hover",
       isExternal: true
     },
     {
       icon: "xi-kakaotalk",
       onClick: () => setIsOpen(true),
-      liClass: "bg-white group hover:bg-icon-kakao-hover-bg hover:border-icon-kakao-hover-bg",
+      liClass: "group hover:bg-icon-kakao-hover-bg hover:border-icon-kakao-hover-bg",
       aClass: "w-full h-full flex items-center justify-center",
-      iClass: "text-2xl group-hover:text-icon-kakao-hover transition duration-200",
+      iClass: "dark:text-main-black text-icon-main-color text-2xl group-hover:text-icon-kakao-hover",
     }
   ]
 
@@ -77,13 +77,11 @@ export default function FooterContact({ className }: FooterContactProps ) {
           </li>
         ))}
       </ul>
-
+      
       {/* Kakao-Modal */}
       {isOpen && (
         <KakaoModal onClose={() => setIsOpen(false)} />
       )}
-
     </>
-    
   );
 }

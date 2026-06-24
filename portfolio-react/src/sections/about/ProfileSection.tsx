@@ -68,7 +68,7 @@ export default function ProfileSection() {
               </p>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-4">
                 {profileInfo.map((info) => (
-                  <div className="flex flex-col gap-1.5 px-4 py-3.5 border border-profile-info-border bg-profile-info-bg rounded-2xl">
+                  <div key={info.title} className="flex flex-col gap-1.5 px-4 py-3.5 border border-profile-info-border bg-profile-info-bg rounded-2xl">
                     <span className="text-xs font-semibold text-profile-info-title">
                       {info.title}.
                     </span>

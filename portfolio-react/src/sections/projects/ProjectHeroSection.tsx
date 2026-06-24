@@ -5,7 +5,7 @@ type ProjectHeroSectionProps = {
 }
 
 /* Common Style */
-const commonLinkStlye = "block border px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300"
+const commonLinkStyle = "block border px-5 py-3 rounded-xl font-bold text-sm"
 
 export default function ProjectHeroSection({ project }: ProjectHeroSectionProps) {
   const projectInfoList = [
@@ -33,7 +33,7 @@ export default function ProjectHeroSection({ project }: ProjectHeroSectionProps)
           href={project.demo}
           target="_blank" 
           rel="noopener noreferrer"
-          className={`${commonLinkStlye} border-main-black text-white bg-main-black  hover:bg-projectdetail-hero-hover hover:border-projectdetail-hero-hover`}
+          className={`${commonLinkStyle} border-projectdetail-hero-demo-border text-white bg-projectdetail-hero-demo hover:bg-projectdetail-hero-hover hover:border-projectdetail-hero-hover-border`}
         >
           View Demo
         </a>
@@ -41,7 +41,7 @@ export default function ProjectHeroSection({ project }: ProjectHeroSectionProps)
           href={project.github} 
           target="_blank" 
           rel="noopener noreferrer"
-          className={`${commonLinkStlye} text-main-brown border-main-brown/30 hover:text-main-dark-brown hover:border-main-brown`}
+          className={`${commonLinkStyle} text-main-brown border-main-brown/30 hover:text-main-dark-brown hover:border-main-brown`}
         >
           Github
         </a>

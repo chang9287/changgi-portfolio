@@ -29,7 +29,7 @@ export default function Preloader({finishLoading}: PreloaderProps) {
 
   const progressWidth = (percent / 100) * 380;
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-home-bg">
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-main-bg">
       {/* 로딩 바 */}
       <div className="relative w-[min(410px,80vw)]">
         <svg viewBox="0 0 410 60">

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import Darkmode from "../ui/Darkmode";
 
 const HEADER_NAV_LIST = [
     { path: "/", title: "Home"},
@@ -44,9 +45,9 @@ export default function Header() {
 
   return (
     <>
-      <header className={`w-full h-16 sticky top-0 transition-all duration-300 z-30 ${isScrolled ? "bg-white/80 backdrop-blur-sm shadow-[0_1px_2px_rgba(0,0,0,0.04)]" : "bg-white"}`}>
+      <header className={`w-full h-16 sticky top-0 z-30 ${isScrolled ? "bg-white/80 dark:bg-common-bg/80 backdrop-blur-sm shadow-[0_1px_2px_rgba(0,0,0,0.04)] dark:shadow-[0_1px_2px_rgba(255,255,255,0.04)]" : "bg-white dark:bg-common-bg"}`}>
         <div className="relative max-w-6xl mx-auto h-full flex justify-between items-center px-3">
-          <button className="border px-4 py-2">버튼</button>
+          <Darkmode />
           <nav className="hidden sm:block">
             <ul className="flex gap-3 sm:gap-5">
               {HEADER_NAV_LIST.map((list) => (
@@ -85,7 +86,7 @@ export default function Header() {
       )}
       {/* 반응형 nav 메뉴 */}
       <nav 
-        className={`fixed top-0 right-0 bg-white w-[max(400px,80dvw)] max-w-dvw h-dvh shadow-[0_0_32px_rgba(0,0,0,0.18)] z-50 transition-transform duration-300 sm:hidden ${isMenuOpen ? "translate-x-0" :"translate-x-full"}`}
+        className={`fixed top-0 right-0 bg-white dark:bg-common-bg w-[max(400px,80dvw)] max-w-dvw h-dvh shadow-[0_0_32px_rgba(0,0,0,0.18)] z-50 transition-transform duration-300 sm:hidden ${isMenuOpen ? "translate-x-0" :"translate-x-full"}`}
       >
         <div className="flex justify-end">
           <button 
