@@ -11,6 +11,13 @@
     font-weight: 900;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Noto Sans KR Local';
+    src: url('./style/fonts/NotoSansKR-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Tailwind CSS */
 @import "tailwindcss";
@@ -51,6 +58,7 @@
   /* 폰트 */
   --font-main: "Noto Sans KR", sans-serif;
   --font-hero: "Pretendard", sans-serif;
+  --font-hero-kr: "Noto Sans KR Local", "Noto Sans KR", sans-serif;
   --font-title: "Saira Extra Condensed", sans-serif;
 
   /* 컬러 */

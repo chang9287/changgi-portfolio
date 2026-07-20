@@ -7,7 +7,7 @@ export default function HeroSection() {
         portfolio
       </span>
       <div className="flex flex-col gap-4 px-2">
-        <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold leading-none">
+        <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold font-hero-kr leading-none">
           안창기
         </h1>
         <p className="text-5xl sm:text-7xl md:text-8xl uppercase font-black text-main-brown font-hero leading-[0.75] tracking-tight">
