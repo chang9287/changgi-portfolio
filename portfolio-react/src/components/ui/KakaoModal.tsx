@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import kakaoOpenTalk from "../../assets/images/Open-kakaoTalk.jpg";
-import { X } from "lucide-react";
+import kakaoOpenTalk from "../../assets/images/Open-kakao-qr.jpg";
+import { X } from "lucide-react" ;
 
 type KakaoModalProps = {
   onClose: () => void;
