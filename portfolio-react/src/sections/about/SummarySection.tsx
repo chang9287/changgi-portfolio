@@ -8,8 +8,8 @@ const SUMMARY_ITEMS = [
   },
   {
     id: 2,
-    title: "기술을 선택할 때는 프로젝트에 적합한 판단의 근거를 확인합니다.",
-    desc: "Web Vitals와 같은 정량 지표뿐만 아니라 유지보수 비용, 외부 의존성, 프로젝트의 규모와 운영 조건을 함께 비교하며 프로젝트에 적합한 방향을 선택합니다."
+    title: "구현 방향을 결정할 때는 적합한 판단의 근거를 확인합니다.",
+    desc: "구현상의 문제와 변경에 따른 영향을 확인하고, 측정이 필요한 경우 Web Vitals와 같은 정량 지표를 활용해 여러 대안을 비교하며 개선 방향을 결정합니다."
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export default function SummarySection() {
         {SUMMARY_ITEMS.map((item) => (
           <li key={item.id}>
             <strong>{item.title}</strong>
-            <p className="text-gray-500 text-sm sm:text-base lg:text-lg">{item.desc}</p>
+            <p className="text-gray-500 text-sm sm:text-base lg:text-lg tracking-tight">{item.desc}</p>
           </li>
         ))}
       </ul>
