@@ -9,7 +9,7 @@ const HOME_NAV_LIST = [
 ]
 
 /* Common Style */
-const linkClass = "relative border-2 w-full h-28 sm:h-32 font-bold text-3xl sm:text-5xl flex p-3 items-end rounded-xl text-main-brown border-main-brown group hover:bg-main-brown hover:text-white transition duration-200";
+const linkClass = "relative border-2 w-full h-28 sm:h-32 font-bold text-3xl sm:text-5xl flex p-3 items-end rounded-xl text-main-brown border-main-brown group hover:bg-main-brown hover:text-white transition duration-200 ";
 
 const iconClass = "absolute top-2 right-2 w-10 h-10 sm:w-14 sm:h-14 stroke-2 opacity-50 group-hover:text-white group-hover:opacity-70 transition duration-200";
 

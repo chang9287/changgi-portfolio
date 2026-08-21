@@ -25,7 +25,6 @@ export default function EducationSection() {
           eduResult={"수료"}
         />
       </div>
-      
     </section>
   );
 }

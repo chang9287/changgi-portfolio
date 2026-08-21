@@ -23,7 +23,7 @@ export default function KakaoModal({ onClose }: KakaoModalProps) {
         <img
           className="max-w-[250px] w-full aspect-square rounded-2xl"
           src={kakaoOpenTalk} 
-          alt="kakao-Opentalk"
+          alt="카카오 오픈채팅 QR 코드"
         />
         <div className="absolute top-0.5 right-0.5 flex justify-center items-center">
           <X

@@ -1,5 +1,5 @@
 export type Skill = 
-  "HTML5" | "CSS3" | "JavaScript" | "SCSS" | "React" | "TailwindCSS" | "TypeScript";
+  "HTML5" | "CSS3" | "JavaScript" | "SCSS" | "React" | "TailwindCSS" | "TypeScript" | "NextJS";
 
 type ColorName = {
   bg: string;
@@ -33,6 +33,10 @@ export const skillColors: Record<Skill, ColorName> = {
   },
   TypeScript : {
     bg: "bg-[#3178C6]",
+    text: "text-white"
+  },
+  NextJS : {
+    bg: "bg-[#000000]",
     text: "text-white"
   }
 }

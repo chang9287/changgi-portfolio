@@ -51,7 +51,7 @@ export default function Projects() {
   }
 
   return (
-    <main className="py-16 px-4 bg-home-bg min-h-[calc(100vh-64px-64px)]">
+    <main className="py-16 px-4 bg-main-bg min-h-[calc(100vh-64px-64px)]">
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-20">
         {/* 프로젝트 필터 */}
         <ProjectFilter 
