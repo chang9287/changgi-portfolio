@@ -2,12 +2,12 @@ export default function HeroSection() {
   return (
     <div className="px-6 sm:px-8 flex flex-col gap-8 pb-12 pt-12 sm:pt-20">
       <span 
-        className="uppercase border border-main-brown/35 px-4 py-1.5 inline-block w-fit bg-home-bg rounded-full text-xs tracking-widest font-bold text-main-brown"
+        className="uppercase border border-main-brown/35 px-4 py-1.5 inline-block w-fit bg-main-bg rounded-full text-xs tracking-widest font-bold text-main-brown"
       >
         portfolio
       </span>
       <div className="flex flex-col gap-4 px-2">
-        <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold leading-none">
+        <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold font-hero-kr leading-none">
           안창기
         </h1>
         <p className="text-5xl sm:text-7xl md:text-8xl uppercase font-black text-main-brown font-hero leading-[0.75] tracking-tight">

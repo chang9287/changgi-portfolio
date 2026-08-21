@@ -16,10 +16,10 @@ export default function ProjectPreviewSection({ project }: ProjectPreviewSection
   const previewRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   const handlePreviewToggle = (previewId: string) => {
-    if(openPreview === previewId){
-      setOpenPreview(null)
+    if(openPreview === previewId) {
+      setOpenPreview(null);
     } else {
-      setOpenPreview(previewId)
+      setOpenPreview(previewId);
     }
   }
 
@@ -29,7 +29,7 @@ export default function ProjectPreviewSection({ project }: ProjectPreviewSection
     previewRefs.current[openPreview]?.scrollTo({
       top: 0,
     });
-  }, [openPreview])
+  }, [openPreview]);
 
   return (
     <section className="flex flex-col gap-2">
@@ -61,7 +61,7 @@ export default function ProjectPreviewSection({ project }: ProjectPreviewSection
                     ref={(el) => {
                       previewRefs.current[preview.id] = el;
                     }}
-                    className={`overflow-y-auto pr-2 ${previewImageHeight}`}
+                    className={`preview-scroll overflow-y-auto pr-2 ${previewImageHeight}`}
                   >
                     <img 
                       src={preview.image} 

@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: ProjectCardProps ) {
   return (
     <Link 
       to={`/projects/${project.id}`} 
-      className="grid md:grid-cols-[420px_1fr] border border-projectcard-border bg-white rounded-3xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.03)] group hover:-translate-y-1 relative transition-all duration-300"
+      className="grid md:grid-cols-[420px_1fr] border border-projectcard-border bg-white dark:bg-projectcard-bg rounded-3xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.03)] group hover:-translate-y-1 relative transition-transform duration-300"
     >
       {/* 이미지 */}
       <div className="w-full aspect-video overflow-hidden border-b md:border-b-0 md:border-r border-projectcard-border">
@@ -54,7 +54,6 @@ export default function ProjectCard({ project }: ProjectCardProps ) {
           className={`delay-75 right-5 bottom-2 ${commonChevronRight}`}
         />
       </div>
-      
     </Link>
   );
 }
